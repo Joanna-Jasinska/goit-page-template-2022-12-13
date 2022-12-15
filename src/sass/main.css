@@ -27,4 +27,11 @@
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.header {
+  height: 502px;
+  width: 100%;
+  background-color: rgb(255, 184, 202);
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
