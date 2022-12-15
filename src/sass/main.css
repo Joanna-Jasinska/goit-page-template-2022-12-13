@@ -29,9 +29,43 @@
   background-position: center;
 }
 
+
 .header {
   height: 502px;
   width: 100%;
   background-color: rgb(255, 184, 202);
   overflow: hidden;
+  
 }/*# sourceMappingURL=main.css.map */
+
+.advantages {
+  display: flex;
+  max-width: 320px;
+}
+.advantages__list {
+  list-style: none;
+}
+.advantages__title {
+  font-family: "Titan One", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #d41443;
+}
+.advantages__text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    flex-direction: row;
+  }
+  
