@@ -29,6 +29,15 @@
   background-position: center;
 }
 
+
+.header {
+  height: 502px;
+  width: 100%;
+  background-color: rgb(255, 184, 202);
+  overflow: hidden;
+  
+}/*# sourceMappingURL=main.css.map */
+
 .advantages {
   display: flex;
   max-width: 320px;
@@ -59,4 +68,4 @@
   .advantages {
     flex-direction: row;
   }
-}/*# sourceMappingURL=main.css.map */
+  
