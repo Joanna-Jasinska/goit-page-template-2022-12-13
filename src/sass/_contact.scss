@@ -1,0 +1,28 @@
+.card-contact {
+  width: 220px;
+  height: 427px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &__city {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+
+    letter-spacing: 0.04em;
+
+    color: #000000;
+  }
+  &__description {
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.5;
+
+
+color: #907E82;
+  }
+}
