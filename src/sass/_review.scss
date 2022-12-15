@@ -1,3 +1,9 @@
+.review__picture {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+
 .review__testimonial {
     text-align: center;
     align-items: baseline;
@@ -5,13 +11,14 @@
     line-height: 31px;
     font-size: 12px;
     background-image: repeating-linear-gradient(#fff, #fff 30px, #E1E1E1 30px, #E1E1E1 31px);
+    color: red;
 }
 
 .review_svg-home {
     content: "";
     width: 12px;
     height: 12px;
-    color: red;
+    fill: blue;
 }
 
 .review_svg-ellipse {
