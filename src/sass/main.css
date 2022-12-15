@@ -27,4 +27,26 @@
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.review__testimonial {
+  text-align: center;
+  align-items: baseline;
+  margin: 0 auto;
+  line-height: 31px;
+  font-size: 12px;
+  background-image: repeating-linear-gradient(#fff, #fff 30px, #E1E1E1 30px, #E1E1E1 31px);
+}
+
+.review_svg-home {
+  content: "";
+  width: 12px;
+  height: 12px;
+  color: red;
+}
+
+.review_svg-ellipse {
+  content: "";
+  width: 12px;
+  height: 12px;
 }/*# sourceMappingURL=main.css.map */
