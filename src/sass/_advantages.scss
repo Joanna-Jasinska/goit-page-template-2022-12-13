@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
+
 .advantages {
   display: flex;
-  max-width: 320px;
 
   &__list {
     list-style: none;
@@ -27,7 +28,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advantages {
-    flex-direction: row;
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .advantages__item {
+    flex-basis: calc((100% - 30px) / 3);
   }
 }
