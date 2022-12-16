@@ -1,0 +1,52 @@
+// btn mobile-menu
+.mobile-menu__open-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  color: rgba(212, 20, 67, 1);
+  right: 25px;
+  top: 20px;
+}
+
+// Blok header Style
+
+.header {
+  height: 502px;
+  width: 100%;
+  background-color: rgba(255, 184, 202, 1);
+  overflow: hidden;
+  position: relative;
+  min-width: 320px;
+}
+
+// logo
+
+.buttons__item {
+  border-radius: 20px;
+  text-align: center;
+  padding: 2% 3%;
+  border: none;
+  color: rgba(212, 20, 67, 1);
+  z-index: 5;
+  &:hover {
+    background-color: rgba(212, 20, 67, 1);
+    color: #fff;
+  }
+}
+//img style
+.header__icecream {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 2;
+}
+.header__elipsebackground {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 75px;
+}
+.buttons {
+  list-style: none;
+  display: flex;
+}
