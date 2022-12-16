@@ -29,35 +29,6 @@
   background-position: center;
 }
 
-.review__picture {
-  width: 85px;
-  height: 85px;
-  margin: 0 auto;
-}
-
-.review__testimonial {
-  text-align: center;
-  align-items: baseline;
-  margin: 0 auto;
-  line-height: 31px;
-  font-size: 12px;
-  background-image: repeating-linear-gradient(#fff, #fff 30px, #E1E1E1 30px, #E1E1E1 31px);
-  color: red;
-}
-
-.review_svg-home {
-  content: "";
-  width: 12px;
-  height: 12px;
-  fill: blue;
-}
-
-.review_svg-ellipse {
-  content: "";
-  width: 12px;
-  height: 12px;
-}/*# sourceMappingURL=main.css.map */
-
 .mobile-menu__open-btn {
   position: absolute;
   background: none;
@@ -106,7 +77,7 @@
 .buttons {
   list-style: none;
   display: flex;
-}/*# sourceMappingURL=main.css.map */
+}
 
 .advantages {
   display: flex;
@@ -134,6 +105,11 @@
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    flex-direction: row;
+  }
+}
 .card-contact {
   width: 220px;
   height: 427px;
@@ -157,9 +133,33 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907E82;
-}/*# sourceMappingURL=main.css.map */
+}
 
-@media screen and (min-width: 768px) {
-  .advantages {
-    flex-direction: row;
-  }}
+.review__picture {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.review__testimonial {
+  text-align: center;
+  align-items: baseline;
+  margin: 0 auto;
+  line-height: 31px;
+  font-size: 12px;
+  background-image: repeating-linear-gradient(#fff, #fff 30px, #E1E1E1 30px, #E1E1E1 31px);
+  color: red;
+}
+
+.review_svg-home {
+  content: "";
+  width: 12px;
+  height: 12px;
+  fill: blue;
+}
+
+.review_svg-ellipse {
+  content: "";
+  width: 12px;
+  height: 12px;
+}/*# sourceMappingURL=main.css.map */
