@@ -29,7 +29,6 @@
   background-position: center;
 }
 
-<<<<<<< HEAD
 .review__picture {
   width: 85px;
   height: 85px;
@@ -58,7 +57,6 @@
   width: 12px;
   height: 12px;
 }/*# sourceMappingURL=main.css.map */
-=======
 
 .mobile-menu__open-btn {
   position: absolute;
@@ -165,4 +163,3 @@
   .advantages {
     flex-direction: row;
   }
->>>>>>> main
