@@ -1,9 +1,15 @@
+.cards-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .card-contact {
   width: 220px;
   height: 427px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  padding: 43px 21px 43px 20px;
   &__city {
     font-family: 'DM Sans';
     font-style: normal;
@@ -17,12 +23,80 @@
   }
   &__description {
     font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 1.5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
 
-
-color: #907E82;
+    color: #907e82;
   }
+  &__line {
+    border: 1px solid rgba(225, 225, 225, 1);
+    margin-top: 25px;
+  }
+  &__branch-category {
+    width: 80px;
+    height: 16px;
+    background-color: rgba(240, 209, 165, 1);
+    border-radius: 4px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+
+    color: #ffffff;
+  }
+  &--resize {
+    width: 130px;
+    background-color: rgba(194, 226, 151, 1);
+  }
+  &__branch {
+    margin-top: 25px;
+  }
+  &__opening-hours {
+    margin-top: 25px;
+  }
+  &__opening-days {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: #000000;
+  }
+  &__hours {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #ffa5ba;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907e82;
+    margin: 0;
+  }
+  &__contact-branch {
+    margin-top: 25px;
+  }
+}
+ul {
+  list-style: none;
 }
