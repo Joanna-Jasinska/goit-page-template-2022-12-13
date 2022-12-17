@@ -1,8 +1,8 @@
 .cards-contact {
   background: linear-gradient(
     to bottom,
-    map-get($colors, 'background-white') 40%,
-    map-get($colors, 'background-rose') 60%
+    map-get($colors, 'background-white') ,
+    map-get($colors, 'background-rose')
   );
   width: 100vw;
   display: flex;
