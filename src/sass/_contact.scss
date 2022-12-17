@@ -1,17 +1,19 @@
-.container {
-  margin:0 auto;
-  padding: 0 115;
 
-}
 .cards-contact {
   background: linear-gradient(to bottom, #ffffff 5%, map-get($colors, 'background-rose') 5%);
   width: 100vw;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-inline: 50px;
   @media screen and (min-width: 768px) {
     background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
     flex-direction: row;
+    padding-inline: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    
+    padding-inline: 115px;
   }
 }
 .card-contact {
