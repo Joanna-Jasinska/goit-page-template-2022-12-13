@@ -8,19 +8,19 @@
 }
 .card-contact {
   width: 220px;
-  height: 427px;
+  height: 100%;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 21px 43px 20px;
   @media screen and (min-width: 768px) {
     width: 220px;
-    height: 544px;
+   
     padding: 50px 32px 50px 31px;
   }
   @media screen and (min-width: 1200px) {
     width: 330px;
-    height: 572px;
+   
     padding: 51px 44px 62px 43px;
   }
   &__city {
@@ -109,17 +109,26 @@
   }
   &__branch {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
     @media screen and (min-width: 768px) {
       margin-top: 30px;
+      gap:14px;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 32px;
+      gap:10px;
     }
   }
   &__opening-hours {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
     @media screen and (min-width: 768px) {
       margin-top: 30px;
+      gap:15px;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 32px;
@@ -131,7 +140,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.8;
-
+    
     color: #000000;
     @media screen and (min-width: 768px) {
       font-size: 14px;
@@ -140,6 +149,7 @@
     @media screen and (min-width: 1200px) {
       font-size: 16px;
       line-height: 1.9;
+      letter-spacing: 0.04em;
     }
   }
   &__hours {
