@@ -1,9 +1,5 @@
 .cards-contact {
-  background: linear-gradient(
-    to bottom,
-    #FFFFFF 20%,
-    map-get($colors, 'background-rose') 20%
-  );
+  background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
   width: 100vw;
   display: flex;
   flex-direction: column;
