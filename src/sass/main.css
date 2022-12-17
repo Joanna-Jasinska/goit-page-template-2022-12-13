@@ -29,6 +29,18 @@
   background-position: center;
 }
 
+:root {
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1280px;
+}
+
+body {
+  color: getColor("black-primary");
+  font-family: "DM Sans", sans-serif;
+  font-family: "Titan One", cursive;
+}
+
 .mobile-menu__open-btn {
   position: absolute;
   background: none;
@@ -64,12 +76,12 @@
   position: absolute;
   bottom: 0;
   right: 32px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header__elipsebackground {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   right: 0;
   bottom: 75px;
 }
