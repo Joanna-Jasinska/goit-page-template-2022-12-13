@@ -1,39 +1,163 @@
 <!-- Section Header -->
 <section class="header">
-  <!-- button Menu Mobille -->
-  <button
-    class="menu-toggle js-open-menu mobile-menu__open-btn"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-  >
-    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 1H20" stroke="#D41443" />
-      <path d="M0 7H20" stroke="#D41443" />
-      <path d="M0 13H20" stroke="#D41443" />
-    </svg>
-  </button>
-  <!-- img header -->
-  <img src="./images/header/logoheader@1x.png" alt="Logo" class="header__logo" />
-  <img
-    src="./images/header/mobille/icecreamheadermobille@1x.png"
-    alt="icecream"
-    class="header__icecream"
-  />
-  <img
-    src="./images/header/mobille/ellipsemobille@1x.png"
-    alt=""
-    class="header__elipsebackground"
-  />
-  <!-- Textheader -->
-  <div class="container-header">
-    <p class="container-header__text">ice cream</p>
-    <p class="container-header__text">made witch</p>
-    <p class="container-header__text container-header__text--primary">passion</p>
-  </div>
-  <!-- button header -->
+  <!-- Container section -->
+  <div class="header__container">
+    <!-- <div class="container-header"> -->
+    <!-- button Menu Mobille -->
+    <button
+      class="menu-toggle js-open-menu mobile-menu__open-btn"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        width="20"
+        height="14"
+        viewBox="0 0 20 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 1H20" stroke="#D41443" />
+        <path d="M0 7H20" stroke="#D41443" />
+        <path d="M0 13H20" stroke="#D41443" />
+      </svg>
+    </button>
+    <!-- img header -->
+    <img
+      alt="Logo"
+      class="header__logo"
+      src="./images/header/logoheader@1x.png"
+      srcset="./images/header/logoheader@1x.png 199w, ./images/header/logoheader@2x.png 398w"
+      sizes="(min-width:1200px) 199px, (min-width:768px) 199px, (min-width:320px) 199px, 98vw"
+    />
+    <img
+      alt="icecream"
+      class="header__icecream"
+      src="./images/header/mobille/icecreamheadermobille@1x.png"
+      srcset="
+        ./images/header/mobille/icecreamheadermobille@1x.png 171w,
+        ./images/header/mobille/icecreamheadermobille@2x.png 342w,
+        ./images/header/tablet/icecreamheadertablet@1x.png   143w,
+        ./images/header/tablet/icecreamheadertablet@2x.png   286w,
+        ./images/header/desktop/icecream-dt@1x.png           236w,
+        ./images/header/desktop/icecream-dt@2x.png           472w
+      "
+      sizes="(min-width:1200px) 236px, (min-width:768px) 143px, (min-width:320px) 171px, 98vw"
+    />
+    <img
+      alt=""
+      class="header__elipsebackground"
+      src="./images/header/mobille/ellipsemobille@1x.png"
+      srcset="
 
-  <div class="buttons">
-    <button class="buttons__item">Products</button>
-    <button class="buttons__item">How it`s made?</button>
+    ./images/header/tablet/ellipseheadertablet@1x.png 324w,
+      ./images/header/tablet/ellipseheadertablet@2x.png 648w
+      ./images/header/desktop/elipseheader-dt@1x.png 538w ,
+      ./images/header/desktop/elipseheader-dt@2x.png 1076w,
+      ./images/header/mobille/ellipsemobille@1x.png 284w,
+      ./images/header/mobille/ellipsemobille@2x.png 568w
+    "
+      sizes="(min-width:1200px) 538px, (min-width:768px) 324px, (min-width:320px) 284px, 98vw"
+    />
+    <!-- Textheader -->
+    <div class="container-header">
+      <p class="container-header__text">ice cream</p>
+      <p class="container-header__text">made witch</p>
+      <p class="container-header__text container-header__text--primary">passion</p>
+    </div>
+
+    <!-- button header -->
+
+    <div class="buttons-header">
+      <button class="buttons-header__item">Products</button>
+      <button class="buttons-header__item">How it`s made?</button>
+    </div>
+    <!-- Img tablet/desktop  -->
+    <div class="milk-text-arrow">
+      <img
+        alt="milk"
+        class="milk-text-arrow__milk"
+        src="./images/header/tablet/milkheadertablet@1x.png"
+        srcset="
+          ./images/header/tablet/milkheadertablet@1x.png 124w,
+          ./images/header/tablet/milkheadertablet@2x.png 248w
+           ./images/header/desktop/milkheader-dt@1x.png   188w,
+                ./images/header/desktop/milkheader-dt@2x.png   376w 
+        "
+        sizes="(min-width:1200px) 188px, (min-width:768px) 124px, 98vw"
+      />
+      <div class="text-arrow">
+        <p class="text-arrow__lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <img
+          alt="arrow"
+          class="milk-text-arrow__arrow-right"
+          src="./images/header/tablet/arrow-right-tb@1x.png"
+          srcset="
+            ./images/header/tablet/arrow-right-tb@1x.png 18w,
+            ./images/header/tablet/arrow-right-tb@1x.png 36w,
+            ./images/header/desktop/arrow-right@2x.png   30w,
+            ./images/header/desktop/arrow-right@2x.png   60w
+          "
+          sizes="(min-width:1200px) 30px, (min-width:768px) 18px, 100vw"
+        />
+      </div>
+    </div>
+    <div class="right-side-header">
+      <button class="header__buy">
+        Buy now
+        <svg class="icon-arrow-btn">
+          <use class="icon-arrow-btn" xlink:href="#icon-arrow-btn"></use>
+        </svg>
+      </button>
+      <ul class="right-side-header__list">
+        <li class="right-side-header__element">
+          <img
+            alt="elipse"
+            class="right-side-header__elipse"
+            src="./images/header/tablet/elipseheader-tb@1x.png"
+            srcset="./images/header/tablet/elipseheader-tb@1x.png 16px,
+        ./images/header/tablet/elipseheader-tb@1x.png 32px,
+        ./images/header/desktop/elipse-white-dt@1x.png 30px,
+        ./images/header/desktop/elipse-white-dt@1x.png 60px"
+            sizes="(min-width:1200px) 30px, (min-width:768px) 16px, 100vw"
+          />
+          <p class="right-side-header__text">16</p>
+        </li>
+
+        <li class="right-side-header__element">
+          <p class="right-side-header__text--primary">cafes</p>
+        </li>
+        <li class="right-side-header__element">
+          <img
+            alt="elipse"
+            class="right-side-header__elipse"
+            src="./images/header/tablet/elipseheader-tb@1x.png"
+            srcset="./images/header/tablet/elipseheader-tb@1x.png 16px,
+        ./images/header/tablet/elipseheader-tb@1x.png 32px,
+        ./images/header/desktop/elipse-white-dt@1x.png 30px,
+        ./images/header/desktop/elipse-white-dt@1x.png 60px"
+            sizes="(min-width:1200px) 30px, (min-width:768px) 16px, 100vw"
+          />
+          <p class="right-side-header__text">23</p>
+        </li>
+        <li class="right-side-header__element">
+          <p class="right-side-header__text--primary">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <img
+      alt="sliderpic"
+      class="header__sliderpic"
+      src="./images/header/tablet/slider-pictablet@1x.png"
+      srcset="
+        ./images/header/tablet/slider-pictablet@1x.png    168w,
+        ./images/header/tablet/slider-pictablet@2x.png    336w,
+        ./images/header/desktop/slider-pic4desktop@1x.png 293w,
+        ./images/header/desktop/slider-pic4desktop@2x.png 586w
+      "
+      sizes="(min-width:1200px) 293px, (min-width:768px) 168px, 100vw"
+    />
   </div>
 </section>
