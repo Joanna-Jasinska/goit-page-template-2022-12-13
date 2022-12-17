@@ -31,9 +31,9 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
   }
   .advantages__item {
-    flex-basis: calc((100% - 30px) / 3);
+    flex-basis: calc((100% - 30px) / 4);
   }
 }
