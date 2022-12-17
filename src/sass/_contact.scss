@@ -2,14 +2,27 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 .card-contact {
   width: 220px;
-  height: 427px;
+  height: 100%;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 21px 43px 20px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+   
+    padding: 50px 32px 50px 31px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+   
+    padding: 51px 44px 62px 43px;
+  }
   &__city {
     font-family: 'DM Sans';
     font-style: normal;
@@ -20,6 +33,15 @@
     letter-spacing: 0.04em;
 
     color: #000000;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+   
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.9;
+   
+    }
   }
   &__description {
     font-family: 'DM Sans';
@@ -29,10 +51,24 @@
     line-height: 1.5;
 
     color: #907e82;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.8;
+    }
   }
   &__line {
     border: 1px solid rgba(225, 225, 225, 1);
     margin-top: 25px;
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 32px;
+    }
   }
   &__branch-category {
     width: 80px;
@@ -54,16 +90,49 @@
     letter-spacing: 0.04em;
 
     color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      width: 73px;
+      height: 28px;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
   }
   &--resize {
     width: 130px;
     background-color: rgba(194, 226, 151, 1);
+    @media screen and (min-width: 768px) {
+      width: 138px;
+      height: 28px;
+    }
   }
   &__branch {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+      gap:14px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 32px;
+      gap:10px;
+    }
   }
   &__opening-hours {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+      gap:15px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 32px;
+    }
   }
   &__opening-days {
     font-family: 'DM Sans';
@@ -71,8 +140,17 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.8;
-
+    
     color: #000000;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.04em;
+    }
   }
   &__hours {
     font-family: 'DM Sans';
@@ -81,9 +159,16 @@
     font-size: 12px;
     line-height: 1.8;
     color: #ffa5ba;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.9;
+    }
   }
   &__link {
-    text-decoration: none;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -92,11 +177,22 @@
 
     color: #907e82;
     margin: 0;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.8;
+    }
   }
   &__contact-branch {
     margin-top: 25px;
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 32px;
+    }
   }
-}
-ul {
-  list-style: none;
 }
