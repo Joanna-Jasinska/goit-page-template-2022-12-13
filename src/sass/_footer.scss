@@ -1,0 +1,80 @@
+//Proszę nie styluj wszystkiego w ten sposób bo to wpływa na inne sekcje
+//mamy w pliku /sass/utils/_normalize.scss style do resetowania
+//dodaj tam margin 0; padding 0 do konktetnych elementów - jeśli jest to potrzebne
+// - J G
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+.footer__flex {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  background-color: #fff5f6;
+  width: 100%;
+  height: 247px;
+}
+.footer__header-1 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  font-family: 'Titan One';
+  color: #ffa5ba;
+}
+.footer__header-2 {
+  font-weight: 400;
+  font-size: 58px;
+  letter-spacing: 0.06em;
+  font-family: 'Titan One';
+  color: #d41443;
+  margin-top: 15px;
+}
+.footer__contacts {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.footer__contacts-tel {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #d41443;
+  display: flex;
+}
+.footer__watermark {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #907e82;
+  display: flex;
+  justify-content: center;
+  margin-block: 9px 10px;
+}
+
+.footer__watermark-border {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 106px;
+}
+.footer__contacts-flex {
+  display: flex;
+  margin-left: 257px;
+}
+.footer__svg {
+  margin-left: 422px;
+  margin-bottom: 50px;
+}
+.footer__svg-styling {
+  background-color: #fea5bb;
+  border: 7px solid;
+  border-color: #fea5bb;
+  box-sizing: content-box;
+  border-radius: 50%;
+}
+.footer__svg-styling-effect {
+  display: inline;
+}

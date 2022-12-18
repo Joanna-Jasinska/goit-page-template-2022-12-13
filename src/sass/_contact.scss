@@ -1,9 +1,31 @@
+.section__cards-contact {
+  background: linear-gradient(to bottom, #ffffff 5%, map-get($colors, 'background-rose') 5%);
+  padding-bottom: 113px;
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
+   padding-bottom: 158px;
+  }
+  @media screen and (min-width: 1200px) {
+    
+   padding-bottom: 165px;
+  }
+}
+
 .cards-contact {
+  
+  
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-inline: 50px;
+  justify-content: center;
   @media screen and (min-width: 768px) {
+    background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
     flex-direction: row;
+    padding-inline: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-inline: 115px;
   }
 }
 .card-contact {
@@ -15,12 +37,12 @@
   padding: 43px 21px 43px 20px;
   @media screen and (min-width: 768px) {
     width: 220px;
-   
+
     padding: 50px 32px 50px 31px;
   }
   @media screen and (min-width: 1200px) {
     width: 330px;
-   
+
     padding: 51px 44px 62px 43px;
   }
   &__city {
@@ -35,12 +57,10 @@
     color: #000000;
     @media screen and (min-width: 768px) {
       font-size: 14px;
-   
     }
     @media screen and (min-width: 1200px) {
       font-size: 16px;
       line-height: 1.9;
-   
     }
   }
   &__description {
@@ -111,24 +131,24 @@
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     @media screen and (min-width: 768px) {
       margin-top: 30px;
-      gap:14px;
+      gap: 14px;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 32px;
-      gap:10px;
+      gap: 10px;
     }
   }
   &__opening-hours {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     @media screen and (min-width: 768px) {
       margin-top: 30px;
-      gap:15px;
+      gap: 15px;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 32px;
@@ -140,7 +160,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.8;
-    
+
     color: #000000;
     @media screen and (min-width: 768px) {
       font-size: 14px;
@@ -194,5 +214,64 @@
     @media screen and (min-width: 1200px) {
       margin-top: 32px;
     }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 54px;
+    padding-inline: 50px;
+    justify-content:center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 15px;
+      margin-top: 81px;
+      
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 86px;
+     
+    }
+  }
+  &__button {
+    width: 161px;
+    height: 44px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    
+    align-items: center;
+    text-align: center;
+border-radius: 22px;
+    border: none;
+
+    
+  
+  }
+}
+.button--one {
+  background-color: #D41342;
+  color: #FFFFFF;
+  @media screen and (min-width: 768px) {
+    width: 191px;
+    
+  }
+  @media screen and (min-width: 1200px) {
+    width: 198px;
+   
+  }
+}
+.button--two {
+  background-color: #FFFFFF;
+  color: #D41443;
+  @media screen and (min-width: 768px) {
+    width: 174px;
+    
+  }
+  @media screen and (min-width: 1200px) {
+    width: 180px;
+   
   }
 }
