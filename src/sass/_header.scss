@@ -247,11 +247,161 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .mobile-menu__open-btn {
+    display: none;
+  }
   .header {
     display: flex;
     justify-content: center;
+    height: 665px;
   }
   .header__container {
     width: 1200px;
+    height: inherit;
+  }
+  //logo
+  .header__logo {
+    margin-left: 0;
+    margin-top: 37px;
+    width: 199px;
+    height: 50px;
+  }
+  //img style
+  .header__icecream {
+    right: 450px;
+    width: 236px;
+    height: 557px;
+  }
+  .header__elipsebackground {
+    right: 267px;
+    bottom: 46px;
+    width: 538px;
+    height: 538px;
+  }
+  .header__sliderpic {
+    width: 293px;
+    height: 232px;
+    position: absolute;
+    z-index: 7;
+    bottom: 0;
+    right: 109px;
+  }
+
+  //Text
+
+  .container-header {
+    padding-top: 84px;
+    max-width: 500px;
+    padding-left: 35px;
+
+    &__text {
+      font-weight: 400;
+      font-size: 38px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0;
+      font-family: 'Titan One', cursive;
+      position: relative;
+      z-index: 10;
+
+      &--primary {
+        color: rgba(212, 20, 67, 1);
+        font-size: 58px;
+      }
+    }
+  }
+  // buttons
+  .buttons-header {
+    padding-top: 15px;
+    padding-left: 35px;
+    &__item {
+      border-radius: 20px;
+      text-align: center;
+      padding: 12px 21px;
+      border: none;
+      color: rgba(212, 20, 67, 1);
+      z-index: 10;
+      position: relative;
+      font-weight: 400;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+
+      &:hover {
+        background-color: rgba(212, 20, 67, 1);
+        color: #fff;
+      }
+    }
+  }
+  //Block milk-text-arrow
+  .text-arrow__lorem {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+  }
+  .milk-text-arrow {
+    display: flex;
+  }
+  .text-arrow {
+    max-width: 185px;
+    padding-top: 128px;
+  }
+  .milk-text-arrow__milk {
+    width: 188px;
+    height: 191px;
+    margin-top: 67px;
+  }
+  .milk-text-arrow__arrow-right {
+    width: 26px;
+    height: 26px;
+  }
+
+  //Right side block header
+
+  .icon-arrow-btn {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 100000;
+  }
+  .right-side-header {
+    position: absolute;
+    top: 40px;
+    right: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    & > ul {
+      list-style: none;
+    }
+  }
+  .right-side-header__text {
+    margin: 0;
+    font-size: 46px;
+    font-weight: 400;
+    font-family: 'Titan One', cursive;
+    color: rgba(212, 20, 67, 1);
+    position: relative;
+    z-index: 1;
+    padding-top: 25px;
+    &--primary {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      margin-top: 25px;
+    }
+  }
+  .right-side-header__element {
+    position: relative;
+    max-width: 50px;
+    max-height: 32px;
+  }
+  .right-side-header__elipse {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -20px;
+    top: 19px;
+    z-index: 0;
   }
 }
