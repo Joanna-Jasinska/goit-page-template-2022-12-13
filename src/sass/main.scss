@@ -4,5 +4,12 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import 'utils/normalize.scss';
 @import './example';
+@import './utils/variables';
 @import './header';
+@import './gallery';
+@import './advantages';
+@import './contact';
+@import './review';
+@import './about';
