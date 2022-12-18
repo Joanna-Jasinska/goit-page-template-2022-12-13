@@ -246,7 +246,7 @@
     text-align: center;
 border-radius: 22px;
     border: none;
-
+cursor: pointer;
     
   
   }
@@ -266,6 +266,9 @@ border-radius: 22px;
 .button--two {
   background-color: #FFFFFF;
   color: #D41443;
+  &:hover {
+    background-color:#ECEBEB;
+  }
   @media screen and (min-width: 768px) {
     width: 174px;
     
