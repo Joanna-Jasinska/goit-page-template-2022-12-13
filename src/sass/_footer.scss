@@ -8,6 +8,7 @@
 // }
 .footer__flex {
   display: flex;
+  justify-content: center;
 }
 .footer {
   background-color: #fff5f6;
@@ -20,8 +21,6 @@
   letter-spacing: 0.04em;
   font-family: 'Titan One';
   color: #ffa5ba;
-
-  margin-left: 114px;
 }
 .footer__header-2 {
   font-weight: 400;
@@ -30,7 +29,6 @@
   font-family: 'Titan One';
   color: #d41443;
   margin-top: 15px;
-  margin-left: 114px;
 }
 .footer__contacts {
   font-family: 'DM Sans';
@@ -76,4 +74,7 @@
   border-color: #fea5bb;
   box-sizing: content-box;
   border-radius: 50%;
+}
+.footer__svg-styling-effect {
+  display: inline;
 }
