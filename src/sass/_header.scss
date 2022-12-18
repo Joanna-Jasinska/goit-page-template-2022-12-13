@@ -100,6 +100,100 @@
     }
   }
 }
+//Mobile-menu
+.mobile-menu.is-open {
+  display: none;
+}
+//blok mobile-menu
+
+.mobile-menu {
+  min-width: 250px;
+  height: 502px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-color: rgba(225, 121, 146, 1);
+  flex-direction: column;
+  top: 0;
+  left: 35%;
+
+  z-index: 999;
+}
+
+//mobile-menu-close-btn
+.mobile-menu__close-btn {
+  position: absolute;
+  background-color: rgba(225, 121, 146, 1);
+  border: none;
+  right: 10px;
+  top: 10px;
+  transition: fill 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    cursor: pointer;
+    transform: fill 250ms;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    fill: rgba(212, 20, 67, 1);
+  }
+}
+
+//Navigation
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+
+  position: relative;
+  z-index: 30;
+
+  &-element {
+    width: 254px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-left: 30px;
+    border-bottom: 1px solid #e18298;
+    border-top: 1px solid #e18298;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 250ms;
+
+    &:hover {
+      color: rgba(212, 20, 67, 1);
+      cursor: pointer;
+      transform: color 250ms;
+      transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+}
+//mobile-menu button BUY
+
+.mobile-menu__btn-buy {
+  text-align: center;
+  width: 160px;
+  height: 44px;
+  margin-top: 45px;
+  background-color: #fff;
+  border-radius: 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: rgba(212, 20, 67, 1);
+  border: none;
+  transition: background-color 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: rgba(212, 20, 67, 1);
+    color: #fff;
+    cursor: pointer;
+    transform: background-color 250ms;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .milk-text-arrow__milk {
     display: none;
@@ -264,6 +358,9 @@
       transition: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
+  .mobile-menu {
+    height: 1020px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -410,6 +507,11 @@
 }
 @media screen and(max-width:1200px) {
   .navigation__list {
+    display: none;
+  }
+}
+@media screen and(min-width:1200px) {
+  .mobile-menu {
     display: none;
   }
 }
