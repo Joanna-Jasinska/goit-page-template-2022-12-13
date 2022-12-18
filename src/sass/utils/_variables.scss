@@ -1,8 +1,9 @@
 :root {
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1280px;
 }
-$mobile: 480px;
-$tablet: 768px;
-$desktop: 1280px;
+
 .container {
   margin: 0px auto;
 }

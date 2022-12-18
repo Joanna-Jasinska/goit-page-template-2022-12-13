@@ -11,9 +11,7 @@
 </symbol>
 <symbol id="icon-arrow-btn" viewBox="0 0 19 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
-</symbol>
-
-<symbol id="icon-right_arrow" viewBox="0 0 32 32">
+</symbol><symbol id="icon-right_arrow" viewBox="0 0 32 32">
 <path d="M20.169 8.025l6.269 6.563c0.375 0.363 0.563 0.856 0.563 1.4s-0.188 1.031-0.563 1.4l-6.269 6.588c-0.744 0.781-1.956 0.781-2.7 0s-0.744-2.044 0-2.825l3.012-3.15h-13.563c-1.063 0-1.919-0.894-1.919-2s0.856-2 1.913-2h13.563l-3.012-3.15c-0.744-0.781-0.744-2.044 0-2.825 0.75-0.781 1.956-0.781 2.706 0z"></path>
 </symbol><symbol id="icon-three-dots" viewBox="0 0 32 32">
 <path d="M7.333 16c0 2.025-1.642 3.667-3.667 3.667s-3.667-1.642-3.667-3.667c0-2.025 1.642-3.667 3.667-3.667s3.667 1.642 3.667 3.667z"></path>
