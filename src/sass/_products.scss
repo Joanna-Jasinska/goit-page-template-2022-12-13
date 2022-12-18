@@ -1,7 +1,7 @@
 //PRODUCTS\\
 
 .products {
-  background: getColor(background-white);
+  // background: getColor(background-white);
 
   &__products-list {
     display: flex;
@@ -14,6 +14,17 @@
     font-family: 'Titan One';
     font-size: 30px;
     font-weight: 400;
+    color: getColor(background-pink);
+    text-align: center;
+  }
+  &__header {
+    font-family: 'Titan One';
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 66.41px;
+    letter-spacing: 6%;
+    text-align: center;
+    color: getColor(pink-primary);
   }
   &__products__pic {
     align-items: center;
@@ -46,8 +57,8 @@
   &__icon-dots {
     fill: getColor(white-primary);
     align-items: center;
-    width: 26px;
-    height: 6px;
+    width: 104px;
+    height: 24px;
     background-color: transparent;
   }
   &__icon-arrow {
@@ -72,24 +83,25 @@
 }
 @media screen and (min-width: 768px) {
   .products {
-    flex-direction: row;
-    margin-right: 34px;
-    margin-left: 34px;
-    gap: 20px;
-
     &__list {
+      display: flex;
+      flex-direction: row;
+      margin-right: 34px;
+      margin-left: 34px;
+      gap: 20px;
       flex-basis: calc((100% - 40px) / 3);
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .products {
-    flex-direction: row;
-    margin-right: 113px;
-    margin-left: 113px;
-    gap: 25px;
-  }
-  &__list {
-    flex-basis: calc((100% - 50px) / 3);
+    &__list {
+      display: flex;
+      flex-direction: row;
+      margin-right: 113px;
+      margin-left: 113px;
+      gap: 25px;
+      flex-basis: calc((100% - 50px) / 3);
+    }
   }
 }
