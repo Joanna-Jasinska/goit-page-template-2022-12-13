@@ -1,0 +1,140 @@
+// .container {
+//     min-width: 180px;
+//     margin: 0 auto;
+//     padding: 10px;
+//     justify-content: center;
+//     padding: 30px;
+//     align-items: center;
+// }
+
+.review {
+    &__picture {
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+    margin-bottom: 30px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    word-wrap: break-word;
+    padding-inline: 50px;
+    padding-block: 25px;
+    padding-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        padding-inline: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 926px;
+    }
+}
+
+    &__wrapper-svg {
+    display: flex;
+    position: absolute;
+}
+
+    &__quotationmark-icon {
+    z-index: -1;
+}
+
+    &__testimonial {
+    text-align: center;
+    align-items: baseline;
+    // margin: 0 auto;
+    line-height: 31px;
+    font-size: 12px;
+    font-weight: 500;
+    background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #E1E1E1 30px, #E1E1E1 31px);
+    position: relative;
+    z-index: 999;
+    padding-inline: 20px;
+    font-family: "DM Sans", sans-serif;
+   
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+    }
+}
+
+    &__dots {
+    display: flex;
+    height: 4px;
+    width: 32px;
+    margin: 0 auto;
+}
+
+    &__dots-icon {
+    width: 4px;
+    height: 4px;
+    fill: #D9D9D9;
+
+    &:hover {
+        fill: #D31342;
+    }
+}
+
+    &__name {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+    &__svg {
+    display: flex;
+    width: 72px;
+    height: 12px;
+    margin: 0 auto;
+}
+
+    &_svg-home {
+    content: "";
+    width: 12px;
+    height: 12px;
+    fill: #D9D9D9;
+
+    &:hover {
+        fill: #D31342;
+    }
+}
+
+    &_svg-ellipse {
+    content: "";
+    width: 12px;
+    height: 12px;
+    fill: #D9D9D9;
+
+    &:hover {
+        fill: #D31342;
+    }
+}
+
+    &_details {
+    margin-top: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 15px;
+    }
+}
+}
