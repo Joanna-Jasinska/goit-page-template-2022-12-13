@@ -1,0 +1,85 @@
+//import
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Titan+One&display=swap');
+// btn mobile-menu
+.mobile-menu__open-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  color: rgba(212, 20, 67, 1);
+  right: 25px;
+  top: 20px;
+}
+//logo
+.header__logo {
+  padding-left: 9%;
+  padding-top: 5px;
+}
+// Blok header Style
+
+.header {
+  height: 502px;
+  width: 100%;
+  background-color: rgba(255, 184, 202, 1);
+  overflow: hidden;
+  position: relative;
+  min-width: 320px;
+}
+
+// buttons
+.buttons {
+  padding-top: 15px;
+  padding-left: 9%;
+  &__item {
+    border-radius: 20px;
+    text-align: center;
+    padding: 7px 15px;
+    border: none;
+    color: rgba(212, 20, 67, 1);
+    z-index: 10;
+    position: relative;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+
+    &:hover {
+      background-color: rgba(212, 20, 67, 1);
+      color: #fff;
+    }
+  }
+}
+//img style
+.header__icecream {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 1;
+}
+.header__elipsebackground {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 75px;
+}
+
+//Text
+.container-header {
+  padding-top: 150px;
+
+  padding-left: 9%;
+
+  &__text {
+    font-weight: 400;
+    font-size: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Titan One', cursive;
+    position: relative;
+    z-index: 10;
+
+    &--primary {
+      color: rgba(212, 20, 67, 1);
+      font-size: 48px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+//PRODUCTS\\
+
+.products {
+  background: getColor(background-white);
+
+  &__products-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px;
+    max-width: 320px;
+  }
+  &__label {
+    font-family: 'Titan One';
+    font-size: 30px;
+    font-weight: 400;
+  }
+  &__products__pic {
+    align-items: center;
+  }
+  &__item {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 24px;
+  }
+  &__item-header {
+    font-family: 'Titan One';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.35px;
+    letter-spacing: 4%;
+    color: getColor(white-primary);
+    text-align: center;
+  }
+  &__icecream {
+    background-color: getColor(background-pink);
+  }
+  &__icecoffee {
+    background-color: getColor(ice-coffee-accent);
+    margin-top: 17px;
+  }
+  &__milkshake {
+    background-color: getColor(milkshake-accent);
+    margin-top: 17px;
+  }
+  &__icon-dots {
+    fill: getColor(white-primary);
+    align-items: center;
+    width: 26px;
+    height: 6px;
+    background-color: transparent;
+  }
+  &__icon-arrow {
+    fill: getColor(pink-primary);
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: getColor(white-primary);
+  }
+
+  &__description {
+    font-family: 'DM Sans', sans-serif;
+    color: getColor(white-primary);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28.16px;
+    letter-spacing: 4%;
+    text-align: center;
+    padding: 30px 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products {
+    flex-direction: row;
+    margin-right: 34px;
+    margin-left: 34px;
+    gap: 20px;
+
+    &__list {
+      flex-basis: calc((100% - 40px) / 3);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    flex-direction: row;
+    margin-right: 113px;
+    margin-left: 113px;
+    gap: 25px;
+  }
+  &__list {
+    flex-basis: calc((100% - 50px) / 3);
+  }
+}
