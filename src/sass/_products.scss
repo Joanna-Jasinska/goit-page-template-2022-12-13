@@ -31,19 +31,18 @@
     margin-bottom: 30px;
   }
   // PICTURES
-  &__products__pic {
+  &__pic {
     align-items: center;
     justify-content: flex-start;
-    position: absolute;
+    position: relative;
+    top: -145px;
   }
   &__item {
     width: 100%;
     max-width: 320px;
+    height: 485px;
     border-radius: 24px;
     margin: 0 auto;
-  }
-  &__item::before {
-    top: -253px;
   }
 
   // nagłówki produktów
@@ -79,8 +78,6 @@
   }
   &__icon-arrow {
     fill: getColor(pink-primary);
-    align-content: center;
-    justify-content: center;
     align-items: center;
     justify-items: center;
     width: 40px;
@@ -124,6 +121,9 @@
       gap: 25px;
       flex-basis: calc((100% - 50px) / 3);
       align-items: center;
+    }
+    &__item {
+      height: 525px;
     }
   }
 }
