@@ -1,19 +1,15 @@
-//Proszę nie styluj wszystkiego w ten sposób bo to wpływa na inne sekcje
-//mamy w pliku /sass/utils/_normalize.scss style do resetowania
-//dodaj tam margin 0; padding 0 do konktetnych elementów - jeśli jest to potrzebne
-// - J G
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
+
 .footer__flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    margin-inline: 20px;
+    width: 320px;
+  }
 }
 .footer {
   background-color: #fff5f6;
-  width: 100%;
-  height: 247px;
 }
 .footer__header-1 {
   font-weight: 400;
@@ -21,6 +17,14 @@
   letter-spacing: 0.04em;
   font-family: 'Titan One';
   color: #ffa5ba;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 26px;
+    width: 340px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    width: 232px;
+  }
 }
 .footer__header-2 {
   font-weight: 400;
@@ -29,6 +33,15 @@
   font-family: 'Titan One';
   color: #d41443;
   margin-top: 15px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 48px;
+    width: 340px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    width: 200px;
+  }
 }
 .footer__contacts {
   font-family: 'DM Sans';
@@ -36,6 +49,13 @@
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #000000;
+  margin: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+  }
 }
 .footer__contacts-tel {
   font-family: 'DM Sans';
@@ -44,6 +64,13 @@
   letter-spacing: 0.02em;
   color: #d41443;
   display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+    margin-right: 65px;
+  }
 }
 .footer__watermark {
   font-family: 'DM Sans';
@@ -53,20 +80,49 @@
   color: #907e82;
   display: flex;
   justify-content: center;
-  margin-block: 9px 10px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 29px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 22px;
+    height: 42px;
+    width: 150px;
+  }
 }
 
 .footer__watermark-border {
   border-top: 1px solid #e1e1e1;
-  margin-top: 106px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 73px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 89px;
+    width: 320px;
+  }
 }
 .footer__contacts-flex {
   display: flex;
-  margin-left: 257px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 46px;
+  }
 }
+
 .footer__svg {
-  margin-left: 422px;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    gap: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 .footer__svg-styling {
   background-color: #fea5bb;
@@ -77,4 +133,18 @@
 }
 .footer__svg-styling-effect {
   display: inline;
+  :hover {
+    background-color: map-get($colors, 'pink-primary');
+    border-color: map-get($colors, 'pink-primary');
+  }
+}
+.footer__svg-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
 }
