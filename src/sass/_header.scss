@@ -217,6 +217,15 @@
     top: 52px;
     z-index: 10;
   }
+
+  .icon-arrow-btn {
+    @media screen and (min-width: 768px) {
+      stroke:#D41443;
+      width:4px;
+      height:8px;
+      }
+    
+  }
   //Container
   .header__container {
     position: relative;
