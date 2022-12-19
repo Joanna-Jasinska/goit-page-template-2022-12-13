@@ -103,12 +103,12 @@
 }
 @media screen and (min-width: 768px) {
   .products {
+    flex-direction: row;
+    margin-right: 34px;
+    margin-left: 34px;
+    gap: 20px;
+
     &__list {
-      display: flex;
-      flex-direction: row;
-      margin-right: 34px;
-      margin-left: 34px;
-      gap: 20px;
       flex-basis: calc((100% - 40px) / 3);
       align-items: center;
     }
