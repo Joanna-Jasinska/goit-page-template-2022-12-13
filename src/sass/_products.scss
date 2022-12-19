@@ -2,7 +2,7 @@
 
 .products {
   // background: getColor(background-white);
-
+  // PRODUCTS
   &__products-list {
     display: flex;
     flex-direction: column;
@@ -10,14 +10,17 @@
     margin: 20px;
     max-width: 320px;
   }
+  // 100% NATURAL
   &__label {
     font-family: 'Titan One';
     font-size: 30px;
     font-weight: 400;
     color: getColor(background-pink);
     text-align: center;
+    margin-top: 70px;
   }
-  &__header {
+  // HEADING
+  &__heading {
     font-family: 'Titan One';
     font-size: 58px;
     font-weight: 400;
@@ -25,16 +28,26 @@
     letter-spacing: 6%;
     text-align: center;
     color: getColor(pink-primary);
+    margin-bottom: 30px;
   }
+  // PICTURES
   &__products__pic {
     align-items: center;
+    justify-content: flex-start;
+    position: absolute;
   }
   &__item {
     width: 100%;
     max-width: 320px;
     border-radius: 24px;
+    margin: 0 auto;
   }
-  &__item-header {
+  &__item::before {
+    top: -253px;
+  }
+
+  // nagłówki produktów
+  &__item-heading {
     font-family: 'Titan One';
     font-size: 30px;
     font-weight: 400;
@@ -57,15 +70,22 @@
   &__icon-dots {
     fill: getColor(white-primary);
     align-items: center;
-    width: 104px;
-    height: 24px;
+    justify-items: center;
+    padding-top: 12px;
+    padding: 0 auto;
+    width: 130px;
+    height: 30px;
     background-color: transparent;
   }
   &__icon-arrow {
     fill: getColor(pink-primary);
+    align-content: center;
+    justify-content: center;
     align-items: center;
+    justify-items: center;
     width: 40px;
     height: 40px;
+    top: 12px;
     border-radius: 50%;
     background-color: getColor(white-primary);
   }
@@ -78,7 +98,7 @@
     line-height: 28.16px;
     letter-spacing: 4%;
     text-align: center;
-    padding: 30px 40px;
+    padding: 30px auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -90,6 +110,7 @@
       margin-left: 34px;
       gap: 20px;
       flex-basis: calc((100% - 40px) / 3);
+      align-items: center;
     }
   }
 }
@@ -102,6 +123,7 @@
       margin-left: 113px;
       gap: 25px;
       flex-basis: calc((100% - 50px) / 3);
+      align-items: center;
     }
   }
 }
