@@ -279,6 +279,7 @@ cursor: pointer;
 .button--one {
   background-color: #D41342;
   color: #FFFFFF;
+  stroke: #FFFFFF;
   @media screen and (min-width: $tablet) {
     width: 191px;
     
@@ -291,6 +292,7 @@ cursor: pointer;
 .button--two {
   background-color: #FFFFFF;
   color: #D41443;
+  stroke:#D41443;
   &:hover {
     background-color:#ECEBEB;
   }
