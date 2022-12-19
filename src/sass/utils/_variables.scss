@@ -24,6 +24,10 @@ $colors: (
   'background-white': #e5e5e5,
   'background-pink': #ffb8ca,
   'background-modal': #e17992,
+  'background-button-red': #d41443,
+  'background-button-red-hover': #c7133e,
+  'background-button-white': #fff,
+  'background-button-white-hover': #ecebeb,
 );
 
 @function getColor($key) {
