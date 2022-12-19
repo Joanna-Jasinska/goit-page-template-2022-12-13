@@ -14,7 +14,7 @@
   display: none;
 }
 .cards-contact {
-  
+  position: relative;
   
   display: flex;
   flex-direction: column;
@@ -28,6 +28,15 @@
   }
   @media screen and (min-width: $desktop) {
     padding-inline: 115px;
+  }
+  &--background {
+    display: none;
+    position: absolute;
+    top: 126px;
+    left: 0;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
   }
 }
 .card-contact {
