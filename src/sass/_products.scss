@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 20px;
+    margin-top: 228px;
     max-width: 320px;
   }
   // 100% NATURAL
@@ -28,21 +28,22 @@
     letter-spacing: 6%;
     text-align: center;
     color: getColor(pink-primary);
-    margin-bottom: 30px;
+    margin-bottom: 180px;
   }
   // PICTURES
   &__pic {
     align-items: center;
     justify-content: flex-start;
-    position: relative;
-    top: -145px;
+    position: absolute;
+    top: -133px;
   }
   &__item {
+    position: relative;
     width: 100%;
     max-width: 320px;
     height: 485px;
     border-radius: 24px;
-    margin: 0 auto;
+    margin: 0 auto 150px auto;
   }
 
   // nagłówki produktów
@@ -60,16 +61,17 @@
   }
   &__icecoffee {
     background-color: getColor(ice-coffee-accent);
-    margin-top: 17px;
   }
   &__milkshake {
     background-color: getColor(milkshake-accent);
-    margin-top: 17px;
+  }
+  &__description--wrapper {
+    display: inline-block;
+    margin-top: 139px;
+    text-align: center;
   }
   &__icon-dots {
     fill: getColor(white-primary);
-    align-items: center;
-    justify-items: center;
     padding-top: 12px;
     padding: 0 auto;
     width: 130px;
@@ -77,14 +79,8 @@
     background-color: transparent;
   }
   &__icon-arrow {
-    fill: getColor(pink-primary);
-    align-items: center;
-    justify-items: center;
     width: 40px;
     height: 40px;
-    top: 12px;
-    border-radius: 50%;
-    background-color: getColor(white-primary);
   }
 
   &__description {
@@ -106,13 +102,27 @@
     gap: 20px;
 
     &__list {
+      display: flex;
+      flex-direction: row;
+      // margin-right: 34px;
+      // margin-left: 34px;
+      gap: 20px;
       flex-basis: calc((100% - 40px) / 3);
       align-items: center;
+    }
+    &__pic {
+      align-items: center;
+      justify-content: flex-start;
+      position: absolute;
+      top: -133px;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .products {
+    &__heading {
+      margin-bottom: 220px;
+    }
     &__list {
       display: flex;
       flex-direction: row;
@@ -123,7 +133,18 @@
       align-items: center;
     }
     &__item {
+      position: relative;
       height: 525px;
+    }
+    &__pic {
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      top: -193px;
+      left: -12px;
+    }
+    &__description--wrapper {
+      margin-top: 159px;
     }
   }
 }
