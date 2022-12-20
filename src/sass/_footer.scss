@@ -90,7 +90,7 @@
 }
 
 .footer__watermark-border {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid map-get($colors, 'border-white');
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     height: 73px;
   }
@@ -124,9 +124,9 @@
   }
 }
 .footer__svg-styling {
-  background-color: #fea5bb;
+  background-color: map-get($colors, 'pink-tertiary');
   border: 7px solid;
-  border-color: #fea5bb;
+  border-color: map-get($colors, 'pink-tertiary');
   box-sizing: content-box;
   border-radius: 50%;
 }
