@@ -20,6 +20,15 @@
   &__item {
     flex-basis: calc((100% - 50px) / 1);
   }
+  &__item--first::before {
+    content: url(../images/advantages/bucketsplash.png);
+  }
+  &__item--second::before {
+    content: url(../images/advantages/bucketapple.png);
+  }
+  &__item--third::before {
+    content: url(../images/advantages/lollipop.png);
+  }
   &__title {
     font-family: 'Titan One', cursive;
     font-size: 36px;
