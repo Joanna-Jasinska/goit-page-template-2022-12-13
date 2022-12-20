@@ -4,6 +4,10 @@
   // display: flex;
   padding-inline: 50px;
   padding-block: 50px;
+  padding-bottom: 97px;
+  
+    @media screen and (min-width: 768px) and (max-width: 1200px) { padding-bottom: 140px;}
+    @media screen and (min-width: 1200px) { padding-bottom: 139px;}
 
   background-color: #fff5f6;
 
