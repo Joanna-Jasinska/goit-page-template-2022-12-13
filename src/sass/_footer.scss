@@ -8,14 +8,14 @@
   }
 }
 .footer {
-  background-color: #fff5f6;
+  background-color: map-get($colors, 'background-rose');
 }
 .footer__header-1 {
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
   font-family: 'Titan One';
-  color: #ffa5ba;
+  color: map-get($colors, 'pink-secondary');
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 26px;
     width: 340px;
@@ -30,7 +30,7 @@
   font-size: 58px;
   letter-spacing: 0.06em;
   font-family: 'Titan One';
-  color: #d41443;
+  color: map-get($colors, 'pink-primary');
   margin-top: 15px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 48px;
@@ -47,7 +47,7 @@
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: map-get($colors, 'black-primary');
   margin: 0;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
@@ -61,7 +61,7 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
-  color: #d41443;
+  color: map-get($colors, 'pink-primary');
   display: flex;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
@@ -76,16 +76,16 @@
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #907e82;
+  color: map-get($colors, 'black-secondary');
   display: flex;
   justify-content: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 29px;
   }
   @media screen and (max-width: 767px) {
-    margin-top: 22px;
     height: 42px;
     width: 150px;
+    margin: 22px auto;
   }
 }
 
