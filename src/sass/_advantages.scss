@@ -2,7 +2,7 @@
 
 .advantages {
   // display: flex;
-  padding-inline: 50px;
+  padding-inline: 115px;
   padding-block: 50px;
 
   background-color: #fff5f6;
@@ -13,6 +13,7 @@
   &__list {
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
     margin: auto;
