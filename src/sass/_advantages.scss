@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
 
 .advantages {
-  display: flex;
+  // display: flex;
   padding-inline: 50px;
-  margin: auto;
+  padding-block: 50px;
+
   background-color: #fff5f6;
 
   &__header {
@@ -11,6 +12,13 @@
   }
   &__list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: auto;
+  }
+  &__item {
+    flex-basis: calc((100% - 50px) / 1);
   }
   &__title {
     font-family: 'Titan One', cursive;
@@ -37,9 +45,10 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
+    margin: auto;
   }
   .advantages__item {
-    flex-basis: calc((100% - 30px) / 4);
+    flex-basis: calc((100% - 100px) / 3);
   }
 }
