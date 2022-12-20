@@ -2,7 +2,10 @@
   .about {
     background-color: #fff5f6;
     width: 100%;
-
+    background-image: url(../images/about/milk-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 776px;
+    background-size: 100vw 133px;
     &__header {
       display: flex;
       flex-wrap: wrap;
@@ -37,47 +40,60 @@
     flex-wrap: wrap;
     width: 220px;
     margin: 0 auto;
+    padding-top: 26px;
 
-    &__text--black {
-      display: flex;
-      justify-content: center;
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.583;
-      color: #000000;
-      margin: 0 auto;
-      padding-bottom: 47px;
+    &__picture {
+      margin-left: -30px;
+      padding-bottom: 46px;
     }
 
-    &__text--grey {
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.583;
-      color: #907e82;
-      margin: 0 auto;
-      padding-bottom: 47px;
-    }
+    &__text {
+      &-black {
+        display: flex;
+        justify-content: center;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.583;
+        color: #000000;
+        margin: 0 auto;
+        padding-bottom: 47px;
+      }
 
-    &__button {
-      justify-content: center;
-      width: 176px;
-      height: 44px;
-      background: #ffffff;
-      border-radius: 22px;
-      margin: 0;
+      &-grey {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.583;
+        color: #907e82;
+        margin: 0 auto;
+        padding-bottom: 47px;
+      }
 
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.286;
-      align-items: center;
-      text-align: center;
-      color: #d41443;
+      &-button {
+        justify-content: center;
+        width: 176px;
+        height: 44px;
+        background: #ffffff;
+        border-radius: 22px;
+        border: none;
+        margin: 0;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.286;
+        align-items: center;
+        text-align: center;
+        color: #d41443;
+
+        &:hover {
+          background: #ecebeb;
+        }
+      }
     }
   }
 }
@@ -85,6 +101,7 @@
 @media screen and (min-width: 768px) {
   .about {
     min-width: 772px;
+    background-image: none;
 
     &__header {
       width: 431px;
@@ -105,30 +122,42 @@
   }
 
   .informations {
-    width: 340px;
+    width: 772px;
+    flex-wrap: nowrap;
+    gap: 17px;
 
-    &__text--black {
-      font-size: 14px;
-      line-height: 1.786;
+    &__picture {
+      margin: 0;
+      padding-top: 50px;
+      padding-left: 39px;
     }
 
-    &__text--grey {
-      font-size: 14px;
-      line-height: 1.786;
-      letter-spacing: 0.04em;
+    &__text {
+      padding-top: 100px;
+      width: 340px;
+
+      &-black {
+        font-size: 14px;
+        line-height: 1.786;
+        padding-bottom: 49px;
+      }
+
+      &-grey {
+        font-size: 14px;
+        line-height: 1.786;
+        letter-spacing: 0.04em;
+        padding-bottom: 62px;
+      }
     }
   }
-
-  //   .fotka{
-  //     position: absolute;
-  //     width: 340px;
-  //     height: 339px;
-  //     background-color: aqua;
-  //   }
 }
 
 @media screen and (min-width: 1280px) {
   .about {
+    background-image: url(../images/about/milk-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0px 342px;
+    background-size: 100vw;
     &__header {
       width: 537px;
       padding-top: 125px;
@@ -148,24 +177,30 @@
   }
 
   .informations {
-    width: 463px;
+    width: 1280px;
+    gap: 74px;
 
-    &__text--black {
-      font-size: 16px;
-      line-height: 1.75;
+    &__picture {
+      padding-left: 112px;
+      padding-top: 55px;
     }
 
-    &__text--grey {
-      font-size: 14px;
-      line-height: 1.93;
-      letter-spacing: 0.04em;
+    &__text {
+      padding-top: 106px;
+      width: 463px;
+
+      &-black {
+        font-size: 16px;
+        line-height: 1.75;
+        padding-bottom: 35px;
+      }
+
+      &-grey {
+        font-size: 14px;
+        line-height: 1.93;
+        letter-spacing: 0.04em;
+        padding-bottom: 45px;
+      }
     }
   }
-
-  //   .fotka{
-  //     position: absolute;
-  //     width: 340px;
-  //     height: 339px;
-  //     background-color: aqua;
-  //   }
 }
