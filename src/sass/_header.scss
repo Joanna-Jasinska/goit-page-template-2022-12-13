@@ -208,13 +208,34 @@
     display: none;
   }
 }
+<<<<<<< Updated upstream
 
+=======
+.icon-arrow-btn {
+  stroke: #d41443;
+  width: 5.26px;
+  height: 8px;
+  margin-left: 15px;
+}
+>>>>>>> Stashed changes
 @media screen and (min-width: 768px) {
   .mobile-menu__open-btn {
     right: 224px;
     top: 52px;
     z-index: 10;
   }
+<<<<<<< Updated upstream
+=======
+
+  .icon-arrow-btn {
+    @media screen and (min-width: 768px) {
+      stroke: #d41443;
+      width: 4px;
+      height: 8px;
+      margin-left: 12px;
+    }
+  }
+>>>>>>> Stashed changes
   //Container
   .header__container {
     position: relative;
@@ -356,6 +377,12 @@
       cursor: pointer;
       transform: background-color 250ms;
       transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+<<<<<<< Updated upstream
+=======
+      .icon-arrow-btn {
+        stroke: #fff;
+      }
+>>>>>>> Stashed changes
     }
   }
   .mobile-menu {
