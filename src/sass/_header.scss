@@ -68,6 +68,8 @@
   z-index: 2;
   width: 171px;
   height: 410px;
+
+
 }
 .header__elipsebackgroundmobile {
   position: absolute;
@@ -218,7 +220,12 @@
   height: 8px;
   margin-left: 15px;
 }
-
+.icon-arrow-btn {
+  stroke:#D41443;
+      width:5.26px;
+      height:8px;
+      margin-left: 15px;
+}
 @media screen and (min-width: 768px) {
   .header__elipsebackgroundmobile {
     display: none;

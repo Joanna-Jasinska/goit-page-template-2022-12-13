@@ -1,0 +1,309 @@
+.section__cards-contact {
+  background: linear-gradient(to bottom, #ffffff 5%, map-get($colors, 'background-rose') 5%);
+  padding-bottom: 113px;
+  @media screen and (min-width: &tablet) {
+    background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
+   padding-bottom: 158px;
+  }
+  @media screen and (min-width: $desktop) {
+    
+   padding-bottom: 165px;
+  }
+}
+.header-hidden {
+  display: none;
+}
+.cards-contact {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline: 50px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: $tablet) {
+    background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
+    flex-direction: row;
+    padding-inline: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-inline: 115px;
+  }
+  &--background {
+    display: none;
+    position: absolute;
+    top: 126px;
+    left: 0;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+  }
+}
+.card-contact {
+  width: 220px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 21px 43px 20px;
+  @media screen and (min-width: $tablet) {
+    width: 220px;
+
+    padding: 50px 32px 50px 31px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+
+    padding: 51px 44px 62px 43px;
+  }
+  &__city {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+
+    letter-spacing: 0.04em;
+
+    color: #000000;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+  }
+  &__description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907e82;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+  }
+  &__line {
+    border: 1px solid rgba(225, 225, 225, 1);
+    margin-top: 25px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+    }
+  }
+  &__branch-category {
+    width: 80px;
+    height: 16px;
+    background-color: rgba(240, 209, 165, 1);
+    border-radius: 4px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+
+    color: #ffffff;
+
+    @media screen and (min-width: $tablet) {
+      width: 73px;
+      height: 28px;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+  }
+  &--resize {
+    width: 130px;
+    background-color: rgba(194, 226, 151, 1);
+    @media screen and (min-width: $tablet) {
+      width: 138px;
+      height: 28px;
+    }
+  }
+  &__branch {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 30px;
+      gap: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+      gap: 10px;
+    }
+  }
+  &__opening-hours {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 30px;
+      gap: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+    }
+  }
+  &__opening-days {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: #000000;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__hours {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #ffa5ba;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+  }
+  &__link {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907e82;
+    margin: 0;
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+  }
+  &__contact-branch {
+    margin-top: 25px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 54px;
+    padding-inline: 50px;
+    justify-content:center;
+    align-items: center;
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      gap: 15px;
+      margin-top: 81px;
+      
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 86px;
+     
+    }
+  }
+  &__button {
+    width: 161px;
+    height: 44px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    
+    align-items: center;
+    text-align: center;
+border-radius: 22px;
+    border: none;
+cursor: pointer;
+    margin-right: 13.62px;
+  
+  }
+  &__button-icon {
+    width:3.61px; 
+    height:8px;
+    margin-left: 8px;
+    @media screen and (min-width: $tablet) {
+      width: 4.28px;
+      margin-left: 13.4px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 4.43px;
+      margin-left: 13.62px;
+     
+    }
+  }
+}
+.button--one {
+  background-color: #D41342;
+  color: #FFFFFF;
+  stroke: #FFFFFF;
+  @media screen and (min-width: $tablet) {
+    width: 191px;
+    
+  }
+  @media screen and (min-width: $desktop) {
+    width: 198px;
+   
+  }
+}
+.button--two {
+  background-color: #FFFFFF;
+  color: #D41443;
+  stroke:#D41443;
+  &:hover {
+    background-color:#ECEBEB;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 174px;
+    
+  }
+  @media screen and (min-width: $desktop) {
+    width: 180px;
+   
+  }
+}

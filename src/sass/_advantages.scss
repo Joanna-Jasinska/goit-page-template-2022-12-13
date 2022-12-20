@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
+
+.advantages {
+  // display: flex;
+  padding-inline: 50px;
+  padding-block: 50px;
+
+  background-color: #fff5f6;
+
+  &__header {
+    display: none;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: auto;
+  }
+  &__item {
+    flex-basis: calc((100% - 50px) / 1);
+  }
+  &__title {
+    font-family: 'Titan One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #d41443;
+  }
+  &__text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: auto;
+  }
+  .advantages__item {
+    flex-basis: calc((100% - 100px) / 3);
+  }
+}
