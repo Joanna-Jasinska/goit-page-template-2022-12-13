@@ -69,7 +69,7 @@
   width: 171px;
   height: 410px;
 }
-.header__elipsebackground {
+.header__elipsebackgroundmobile {
   position: absolute;
   z-index: 1;
   right: 0;
@@ -207,25 +207,27 @@
   .header__sliderpic {
     display: none;
   }
+  .header__elipsebackground {
+    display: none;
+  }
 }
-<<<<<<< Updated upstream
 
-=======
 .icon-arrow-btn {
   stroke: #d41443;
   width: 5.26px;
   height: 8px;
   margin-left: 15px;
 }
->>>>>>> Stashed changes
+
 @media screen and (min-width: 768px) {
+  .header__elipsebackgroundmobile {
+    display: none;
+  }
   .mobile-menu__open-btn {
     right: 224px;
     top: 52px;
     z-index: 10;
   }
-<<<<<<< Updated upstream
-=======
 
   .icon-arrow-btn {
     @media screen and (min-width: 768px) {
@@ -235,7 +237,7 @@
       margin-left: 12px;
     }
   }
->>>>>>> Stashed changes
+
   //Container
   .header__container {
     position: relative;
@@ -265,6 +267,8 @@
     height: 336px;
   }
   .header__elipsebackground {
+    position: absolute;
+    z-index: 1;
     right: 137px;
     bottom: 46px;
     width: 324px;
@@ -377,12 +381,9 @@
       cursor: pointer;
       transform: background-color 250ms;
       transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-<<<<<<< Updated upstream
-=======
       .icon-arrow-btn {
         stroke: #fff;
       }
->>>>>>> Stashed changes
     }
   }
   .mobile-menu {

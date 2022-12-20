@@ -58,23 +58,32 @@
     <img
       alt=""
       class="header__elipsebackground"
-      src="./images/header/mobille/ellipsemobille@1x.png"
+      src="./images/header/tablet/ellipseheadertablet@1x.png"
       srcset="
-      ./images/header/mobille/ellipsemobille@1x.png 284w,
-      ./images/header/mobille/ellipsemobille@2x.png 568w,
     ./images/header/tablet/ellipseheadertablet@1x.png 324w,
       ./images/header/tablet/ellipseheadertablet@2x.png 648w
       ./images/header/desktop/elipseheader-dt@1x.png 538w ,
       ./images/header/desktop/elipseheader-dt@2x.png 1076w
 
     "
-      sizes="(min-width:1200px) 538px, (min-width:768px) 324px, (min-width:320px) 284px, 98vw"
+      sizes="(min-width:1200px) 538px, (min-width:768px) 324px, 98vw"
+    />
+    <img
+      alt=""
+      class="header__elipsebackgroundmobile"
+      src="./images/header/mobille/ellipsemobille@1x.png"
+      srcset="
+        ./images/header/mobille/ellipsemobille@1x.png 284w,
+        ./images/header/mobille/ellipsemobille@2x.png 568w
+      "
     />
     <!-- Textheader -->
     <div class="container-header">
-      <p class="container-header__text">ice cream</p>
-      <p class="container-header__text">made witch</p>
-      <p class="container-header__text container-header__text--primary">passion</p>
+      <h1 class="container-header__text">
+        ice cream <br />
+        made witch <br />
+        <span class="container-header__text--primary">passion</span>
+      </h1>
     </div>
 
     <!-- button header -->
@@ -122,6 +131,9 @@
         <!-- <svg class="icon-arrow-btn">
           <use class="icon-arrow-btn" xlink:href="#icon-arrow-btn"></use>
         </svg> -->
+        <svg class="icon-arrow-btn">
+          <use class="" href="./images/sprites.svg#icon-arrow-btn"></use>
+        </svg>
       </button>
       <ul class="right-side-header__list">
         <li class="right-side-header__element">
@@ -196,7 +208,9 @@
       Buy now
       <!-- <svg class="icon-arrow-btn">
         <use class="icon-arrow-btn" xlink:href="#icon-arrow-btn"></use>
-      </svg> -->
+      </svg> --><svg class="icon-arrow-btn">
+        <use class="" href="./images/sprites.svg#icon-arrow-btn"></use>
+      </svg>
     </button>
     <ul class="mobile-menu__list">
       <li class="mobile-menu__list-element">Home</li>
