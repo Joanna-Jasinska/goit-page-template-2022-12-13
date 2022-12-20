@@ -2,7 +2,13 @@
 
 .advantages {
   display: flex;
+  padding-inline: 50px;
+  margin: auto;
+  background-color: #fff5f6;
 
+  &__header {
+    display: none;
+  }
   &__list {
     list-style: none;
   }
