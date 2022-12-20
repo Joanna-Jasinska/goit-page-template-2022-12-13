@@ -14,7 +14,7 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 38px;
     margin: auto;
   }
   &__item {
@@ -45,10 +45,16 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 60px;
     margin: auto;
   }
   .advantages__item {
     flex-basis: calc((100% - 100px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+     gap: 30px;
+    
   }
 }
