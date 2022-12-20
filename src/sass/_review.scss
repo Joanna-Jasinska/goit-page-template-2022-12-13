@@ -9,6 +9,13 @@
 
 .review {
     padding-bottom: 86.16px;
+     @media screen and (min-width: 768px) {
+        padding-bottom: 119.16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 132px;
+    }
     &__picture {
         margin: 0 auto;
         display: flex;
@@ -26,12 +33,10 @@
 
     @media screen and (min-width: 768px) {
         padding-inline: 80px;
-        padding-bottom: 119.16px;
     }
 
     @media screen and (min-width: 1200px) {
         max-width: 926px;
-        padding-bottom: 132px;
     }
 }
 
