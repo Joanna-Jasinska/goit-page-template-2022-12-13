@@ -62,3 +62,9 @@
     flex-basis: calc((100% - 100px) / 3);
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    max-width: 1050px;
+  }
+}
