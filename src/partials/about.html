@@ -3,29 +3,36 @@
     <label class="about__header-label">Tradition and love</label>
     <h2 class="about__header-title">How It's Made?</h2>
   </div>
-  <!-- <img
-    src="../images/about/Mobile/cow-mobile.png"
-    alt="Cow with milk"
-    srcset="
-      ../images/about/Mobile/cow-mobile.png    280w,
-      ../images/about/Mobile/cow-mobile@2x.png 560w
-    "
-    sizes="280px"
-    class="photocow"
-  /> -->
-  <div class="fotka"></div>
   <div class="informations">
-    <p class="informations__text--black">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-      eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-    </p>
-    <p class="informations__text--grey">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-      imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-      Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-    </p>
-    <button class="informations__button">Read more<svg class="icon-arrow-btn">
-      <use class="" href="./images/sprites.svg#icon-arrow-btn"></use>
-    </svg></button>
+    <picture class="informations__picture">
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/about/cow-desktop.png 1x, ./images/about/cow-desktop@2x.png 2x"
+        type="image/png" />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/about/cow-tablet.png 1x, ./images/about/cow-tablet@2x.png 2x"
+        type="image/png" />
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/about/cow-mobile.png 1x, ./images/about/cow-mobile@2x.png 2x"
+        type="image/png" />
+      <img
+        class="informations__picture-cow"
+        src="./images/about/cow-mobile.png"
+        alt="cow with milk"
+    /></picture>
+    <div class="informations__text">
+      <p class="informations__text-black">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+      </p>
+      <p class="informations__text-grey">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+      </p>
+      <button class="informations__text-button">Read more</button>
+    </div>
   </div>
 </section>
