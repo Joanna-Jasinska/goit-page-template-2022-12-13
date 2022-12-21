@@ -1,0 +1,36 @@
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1280px;
+
+.container {
+  margin: 0px auto;
+}
+body {
+  color: getColor('black-primary');
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Titan One', cursive;
+}
+
+$colors: (
+  'black-primary': #000000,
+  'black-secondary': #907e82,
+  'pink-primary': #d41443,
+  'pink-secondary': #ffa5ba,
+  'pink-tertiary': #fea5bb,
+  'white-primary': #ffffff,
+  'ice-coffee-accent': #f0d1a5,
+  'milkshake-accent': #c2e297,
+  'background-rose': #fff5f6,
+  'background-white': #e5e5e5,
+  'background-pink': #ffb8ca,
+  'background-modal': #e17992,
+  'border-white': #e1e1e1,
+  'background-button-red': #d41443,
+  'background-button-red-hover': #c7133e,
+  'background-button-white': #fff,
+  'background-button-white-hover': #ecebeb,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
