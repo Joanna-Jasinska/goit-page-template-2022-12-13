@@ -66,6 +66,7 @@
 .buttons-header__item.buttons-header__item--primary {
   background-color: #fff;
   color: rgba(212, 20, 67, 1);
+  margin-left: 1%;
   &:hover {
     background-color: rgba(236, 235, 235, 1);
     color: rgba(212, 20, 67, 1);
@@ -119,7 +120,7 @@
 
 .mobile-menu {
   min-width: 250px;
-  height: 502px;
+  height: 100vh;
   display: flex;
   position: fixed;
   align-items: center;
@@ -178,6 +179,7 @@
   transition: color 250ms;
   &:hover {
     cursor: pointer;
+    color: rgba(212, 20, 67, 1);
     transform: color 250ms;
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
@@ -387,6 +389,7 @@
     border: none;
     transition: background-color 400ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 20px;
     &:hover {
       background-color: rgba(236, 235, 235, 1);
 
@@ -394,9 +397,6 @@
       transform: background-color 250ms;
       transition: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
-  }
-  .mobile-menu {
-    height: 1020px;
   }
 }
 
@@ -509,6 +509,9 @@
     height: 30px;
     right: 3px;
     top: 19px;
+  }
+  .header__buy {
+    margin-bottom: 55px;
   }
   //Navigation
   .navigation {
