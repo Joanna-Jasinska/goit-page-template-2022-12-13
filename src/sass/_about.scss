@@ -1,0 +1,210 @@
+@media screen and (min-width: 320px) {
+  .about {
+    background-color: #fff5f6;
+    width: 100%;
+    background-image: url(../images/about/milk-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 776px;
+    background-size: 100vw 133px;
+    padding-bottom: 39px;
+
+    &__header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 125px;
+      margin: 0 auto;
+      width: 200px;
+
+      &-label {
+        font-size: 18px;
+        line-height: 1.167;
+        color: #ffa5ba;
+      }
+
+      &-title {
+        font-size: 34px;
+        line-height: 1.147;
+        letter-spacing: 0.04em;
+        color: #d41443;
+        padding-top: 15px;
+      }
+    }
+  }
+
+  .informations {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    margin: 0 auto;
+    padding-top: 26px;
+
+    &__picture {
+      margin-left: -30px;
+      padding-bottom: 46px;
+    }
+
+    &__text {
+      &-black {
+        display: flex;
+        justify-content: center;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.583;
+        color: #000000;
+        margin: 0 auto;
+        padding-bottom: 47px;
+      }
+
+      &-grey {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.583;
+        color: #907e82;
+        margin: 0 auto;
+        padding-bottom: 47px;
+      }
+
+      &-button {
+        justify-content: center;
+        width: 176px;
+        height: 44px;
+        background: #ffffff;
+        border-radius: 22px;
+        border: none;
+        margin: 0;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.286;
+        align-items: center;
+        text-align: center;
+        color: #d41443;
+
+        &:hover {
+          background: #ecebeb;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    min-width: 772px;
+    background-image: none;
+    padding-bottom: 66px;
+
+    &__header {
+      width: 431px;
+      padding-top: 130px;
+
+      &-label {
+        font-size: 26px;
+        line-height: 1.154;
+      }
+
+      &-title {
+        font-size: 48px;
+        line-height: 1.146;
+        letter-spacing: 0.04em;
+        padding-top: 16px;
+      }
+    }
+  }
+
+  .informations {
+    width: 772px;
+    flex-wrap: nowrap;
+    gap: 17px;
+
+    &__picture {
+      margin: 0;
+      padding-top: 50px;
+      padding-left: 39px;
+    }
+
+    &__text {
+      padding-top: 100px;
+      width: 340px;
+
+      &-black {
+        font-size: 14px;
+        line-height: 1.786;
+        padding-bottom: 49px;
+      }
+
+      &-grey {
+        font-size: 14px;
+        line-height: 1.786;
+        letter-spacing: 0.04em;
+        padding-bottom: 62px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url(../images/about/milk-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0px 342px;
+    background-size: 100vw;
+    padding-bottom: 39px;
+    &__header {
+      width: 537px;
+      padding-top: 125px;
+
+      &-label {
+        font-size: 30px;
+        line-height: 1.133;
+      }
+
+      &-title {
+        font-size: 58px;
+        line-height: 1.138;
+        letter-spacing: 0.06em;
+        padding-top: 15px;
+      }
+    }
+  }
+
+  .informations {
+    width: 1280px;
+    gap: 74px;
+
+    &__picture {
+      padding-left: 112px;
+      padding-top: 55px;
+    }
+
+    &__text {
+      padding-top: 106px;
+      width: 463px;
+
+      &-black {
+        font-size: 16px;
+        line-height: 1.75;
+        padding-bottom: 35px;
+      }
+
+      &-grey {
+        font-size: 14px;
+        line-height: 1.93;
+        letter-spacing: 0.04em;
+        padding-bottom: 45px;
+      }
+    }
+  }
+}
