@@ -1,14 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
 
 .advantages {
-  display: flex;
-  padding-inline: 50px;
-  margin: auto;
+  // display: flex;
+  padding-inline: 115px;
+  padding-block: 50px;
+  padding-bottom: 97px;
+  
+    @media screen and (min-width: 768px) and (max-width: 1200px) { padding-bottom: 140px;}
+    @media screen and (min-width: 1200px) { padding-bottom: 139px;}
+
+  background-color: #fff5f6;
+
   &__header {
     display: none;
   }
   &__list {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 38px;
+    margin: auto;
+  }
+  &__item {
+    flex-basis: calc((100% - 50px) / 1);
+  }
+  &__item--first::before {
+    content: url(../images/advantages/bucketsplash.png);
+  }
+  &__item--second::before {
+    content: url(../images/advantages/bucketapple.png);
+  }
+  &__item--third::before {
+    content: url(../images/advantages/lollipop.png);
   }
   &__title {
     font-family: 'Titan One', cursive;
@@ -35,9 +59,16 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 60px;
+    margin: auto;
   }
   .advantages__item {
-    flex-basis: calc((100% - 30px) / 4);
+    flex-basis: calc((100% - 100px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+     gap: 30px;
+    
   }
 }

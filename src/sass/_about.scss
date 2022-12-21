@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
     background-position: 0 776px;
     background-size: 100vw 133px;
+    padding-bottom: 39px;
+
     &__header {
       display: flex;
       flex-wrap: wrap;
@@ -102,6 +104,7 @@
   .about {
     min-width: 772px;
     background-image: none;
+    padding-bottom: 66px;
 
     &__header {
       width: 431px;
@@ -158,6 +161,7 @@
     background-repeat: no-repeat;
     background-position: 0px 342px;
     background-size: 100vw;
+    padding-bottom: 39px;
     &__header {
       width: 537px;
       padding-top: 125px;

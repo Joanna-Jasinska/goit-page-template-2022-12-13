@@ -21,6 +21,7 @@
   gap: 20px;
   padding-inline: 50px;
   justify-content: center;
+  align-items: center;
   @media screen and (min-width: $tablet) {
     background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
     flex-direction: row;
@@ -233,6 +234,7 @@
     margin-top: 54px;
     padding-inline: 50px;
     justify-content:center;
+    align-items: center;
     @media screen and (min-width: $tablet) {
       flex-direction: row;
       gap: 15px;

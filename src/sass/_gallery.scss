@@ -9,11 +9,12 @@
 
 .gallery__images {
   background-image: linear-gradient (to bottom, map-get($colors, 'background-rose') 40%, map-get($colors, 'background-white') 60%), url(../images/gallery/gallery-mobile.png);
-  max-width: 100%;
+  width: 100%;
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+  margin-bottom: 80px;
   }
 
 
@@ -29,11 +30,12 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .gallery__images {
     background-image: url(../images/gallery/gallery-tablet.png);
-    max-width: 100%;
+    width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    margin-bottom: 121px;
   }
 }
 
@@ -48,11 +50,12 @@
 @media screen and (min-width: 1200px) {
   .gallery__images{
     background-image: url(../images/gallery/gallery-desktop.png);
-    max-width: 100%;
+    width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    margin-bottom: 123px;
   }
 }
 
