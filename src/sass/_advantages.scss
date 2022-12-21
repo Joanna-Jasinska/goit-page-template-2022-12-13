@@ -58,6 +58,10 @@
 
     color: #000000;
   }
+  &__container {
+    max-width: 320px;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -70,6 +74,9 @@
   .advantages__item {
     flex-basis: calc((100% - 120px) / 3);
   }
+  .advantages__container {
+    max-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -78,5 +85,8 @@
   }
   .advantages__list {
     gap: 30px;
+  }
+  .advantages__container {
+    max-width: 1200px;
   }
 }
