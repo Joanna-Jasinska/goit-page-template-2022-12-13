@@ -96,6 +96,13 @@
           background: #ecebeb;
         }
       }
+
+      &-icon {
+        stroke: #d41443;
+        width: 5.26px;
+        height: 8px;
+        margin-left: 15px;
+      }
     }
   }
 }
@@ -150,6 +157,11 @@
         line-height: 1.786;
         letter-spacing: 0.04em;
         padding-bottom: 62px;
+      }
+
+      &-button {
+        font-size: 16px;
+        line-height: 1.313;
       }
     }
   }
