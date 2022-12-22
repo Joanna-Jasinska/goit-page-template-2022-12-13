@@ -80,7 +80,7 @@
     height: 252px;
     position: absolute;
     top: -113px;
-    left: 20px;
+    left: 35.5px;
     @media (min-device-pixel-ratio: 2) {
       background-image: url('../images/products/mobile1@2x.png');
     }
@@ -121,7 +121,7 @@
     height: 252px;
     position: absolute;
     top: -113px;
-    left: 20px;
+    left: 35.5px;
     @media (min-device-pixel-ratio: 2) {
       background-image: url('../images/products/mobile2@2x.png');
     }
@@ -156,7 +156,7 @@
     height: 252px;
     position: absolute;
     top: -113px;
-    left: 20px;
+    left: 35.5px;
     @media (min-device-pixel-ratio: 2) {
       background-image: url('../images/products/mobile3@2x.png');
     }
@@ -271,6 +271,7 @@
     border-radius: 50px;
     border: none;
     right: 4px;
+    cursor: pointer;
   }
 
   &__description {
