@@ -1,9 +1,29 @@
 <section class="gallery" id="gallery">
   <div class="container gallery--container">
-    <img
+  <div class="gallery__background">
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/gallery/gallery-desktop.png 1x, ./images/gallery/gallery-desktop@2x.png 2x"
+        type="image/png" />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/gallery/gallery-tablet.png 1x, ./images/gallery/gallery-tablet@2x.png 2x"
+        type="image/png" />
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/gallery/gallery-mobile.png 1x, ./images/gallery/gallery-mobile@2x.png 2x"
+        type="image/png" />
+      <img
+        class="gallery__images"
+        src="./images/gallery/gallery-mobile.png"
+        alt="icecream gallery"
+    /></picture>
+    <!--<img
       class="gallery__images"
       src="./images/gallery/gallery-desktop.png"
       alt="icecream gallery"
-    />
+    >-->
+  </div>
   </div>
 </section>

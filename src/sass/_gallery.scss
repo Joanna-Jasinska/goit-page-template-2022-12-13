@@ -4,51 +4,39 @@
   // height: auto;
   // margin: 0 auto;
 
-  background: linear-gradient(
+  .gallery__background {background: linear-gradient(
     to bottom,
-    map-get($colors, 'background-rose') 171px,
-    map-get($colors, 'white-primary') 171px
-  );
+    map-get($colors, 'background-rose') 30.8%,
+    map-get($colors, 'white-primary') 30.8%
+  );}
+ 
 
   &--container {
-    max-width: 1280px;
+   // max-width: 1280px;
   }
 }
-
+@media screen and (min-width: 320px){
 .gallery__images {
-  // background-image: linear-gradient
-  //     (to bottom, map-get($colors, 'background-rose') 40%, map-get($colors, 'background-white') 40%),
-  //   url(../images/gallery/gallery-mobile.png);
+  background-image: url(../images/gallery/gallery-mobile.png);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 80px;
-}
+}}
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
   .gallery__images {
-    background-image: linear-gradient
-        (
-          to bottom,
-          map-get($colors, 'background-rose') 40%,
-          map-get($colors, 'background-white') 40%
-        ),
-      url(../images/gallery/gallery-mobile@2x.png);
+    background-image: url(../images/gallery/gallery-mobile@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .gallery__images {
-    background-image: linear-gradient
-        (
-          to bottom,
-          map-get($colors, 'background-rose') 40%,
-          map-get($colors, 'background-white') 40%
-        ),
+    background-image:
       url(../images/gallery/gallery-tablet.png);
     width: 100%;
     height: auto;
@@ -63,25 +51,13 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
   .gallery__images {
-    background-image: linear-gradient
-        (
-          to bottom,
-          map-get($colors, 'background-rose') 40%,
-          map-get($colors, 'background-white') 40%
-        ),
-      url(../images/gallery/gallery-tablet@2x.png);
+    background-image: url(../images/gallery/gallery-tablet@2x.png);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__images {
-    background-image: linear-gradient
-        (
-          to bottom,
-          map-get($colors, 'background-rose') 40%,
-          map-get($colors, 'background-white') 40%
-        ),
-      url(../images/gallery/gallery-desktop.png);
+    background-image: url(../images/gallery/gallery-desktop.png);
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -95,12 +71,6 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .gallery__images {
-    background-image: linear-gradient
-        (
-          to bottom,
-          map-get($colors, 'background-rose') 40%,
-          map-get($colors, 'background-white') 40%
-        ),
-      url(../images/gallery/gallery-desktop@2x.png);
+    background-image: url(../images/gallery/gallery-desktop@2x.png);
   }
 }
