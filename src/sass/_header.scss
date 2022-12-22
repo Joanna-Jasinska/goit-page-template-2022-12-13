@@ -185,8 +185,12 @@
   transition: color 250ms;
   &:hover {
     cursor: pointer;
+    color: rgba(212, 20, 67, 1);
     transform: color 250ms;
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  &--white:hover {
+    color: #fff;
   }
 }
 //mobile-menu button BUY
