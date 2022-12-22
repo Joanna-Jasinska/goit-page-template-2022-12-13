@@ -127,9 +127,15 @@
   background-color: rgba(225, 121, 146, 1);
   flex-direction: column;
   top: 0;
-  left: 35%;
+  // left: 35%;
+  right: 0;
 
   z-index: 999;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    right: 240px;
+  }
 }
 
 //mobile-menu-close-btn
