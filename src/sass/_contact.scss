@@ -3,11 +3,10 @@
   padding-bottom: 113px;
   @media screen and (min-width: &tablet) {
     background: linear-gradient(to bottom, #ffffff 15%, map-get($colors, 'background-rose') 15%);
-   padding-bottom: 158px;
+    padding-bottom: 158px;
   }
   @media screen and (min-width: $desktop) {
-    
-   padding-bottom: 165px;
+    padding-bottom: 165px;
   }
 }
 .header-hidden {
@@ -15,7 +14,7 @@
 }
 .cards-contact {
   position: relative;
-  
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -30,11 +29,15 @@
   @media screen and (min-width: $desktop) {
     padding-inline: 115px;
   }
+  > picture {
+    position: absolute;
+    top: 102px;
+  }
   &--background {
     display: none;
-    position: absolute;
-    top: 126px;
-    left: 0;
+    // position: absolute;
+    // top: 126px;
+    // left: 0;
     @media screen and (min-width: $desktop) {
       display: flex;
     }
@@ -233,17 +236,15 @@
     gap: 10px;
     margin-top: 54px;
     padding-inline: 50px;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     @media screen and (min-width: $tablet) {
       flex-direction: row;
       gap: 15px;
       margin-top: 81px;
-      
     }
     @media screen and (min-width: $desktop) {
       margin-top: 86px;
-     
     }
   }
   &__button {
@@ -254,18 +255,17 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    
+
     align-items: center;
     text-align: center;
-border-radius: 22px;
+    border-radius: 22px;
     border: none;
-cursor: pointer;
+    cursor: pointer;
     margin-right: 13.62px;
-  
   }
   &__button-icon {
-    width:3.61px; 
-    height:8px;
+    width: 3.61px;
+    height: 8px;
     margin-left: 8px;
     @media screen and (min-width: $tablet) {
       width: 4.28px;
@@ -274,36 +274,31 @@ cursor: pointer;
     @media screen and (min-width: $desktop) {
       width: 4.43px;
       margin-left: 13.62px;
-     
     }
   }
 }
 .button--one {
-  background-color: #D41342;
-  color: #FFFFFF;
-  stroke: #FFFFFF;
+  background-color: #d41342;
+  color: #ffffff;
+  stroke: #ffffff;
   @media screen and (min-width: $tablet) {
     width: 191px;
-    
   }
   @media screen and (min-width: $desktop) {
     width: 198px;
-   
   }
 }
 .button--two {
-  background-color: #FFFFFF;
-  color: #D41443;
-  stroke:#D41443;
+  background-color: #ffffff;
+  color: #d41443;
+  stroke: #d41443;
   &:hover {
-    background-color:#ECEBEB;
+    background-color: #ecebeb;
   }
   @media screen and (min-width: $tablet) {
     width: 174px;
-    
   }
   @media screen and (min-width: $desktop) {
     width: 180px;
-   
   }
 }
