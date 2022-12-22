@@ -2,8 +2,17 @@
   <div class="container gallery--container">
     <img
       class="gallery__images"
-      src="./images/gallery/gallery-desktop.png"
+      src="./images/gallery/gallery-mobile.png"
       alt="icecream gallery"
+      srcset="
+        ./images/gallery/gallery-desktop.png    1280w,
+        ./images/gallery/gallery-desktop@2x.png 2560w,
+        ./images/gallery/gallery-tablet.png      768w,
+        ./images/gallery/gallery-tablet@2x.png  1536w,
+        ./images/gallery/gallery-mobile.png      320w,
+        ./images/gallery/gallery-mobile@2x.png   640w
+      "
+      sizes="(min-width:1200px) 1280px, (min-width:768px) 786px, (min-width:320px) 364px, 98vw"
     />
   </div>
 </section>
