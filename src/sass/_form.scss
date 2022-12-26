@@ -21,9 +21,11 @@
   left: 50%;
   height: auto;
   transform: translate(-50%, -50%);
-  width: 450px;
-  min-height: 581px;
-  background-color: #ffffff;
+  width: auto;
+  // min-height: 581px;
+  background-color: #fff5f6;
+  z-index: 9999;
+  border-radius: 5%;
 }
 .button__log {
   background-color: #fff5f6;
@@ -47,4 +49,27 @@
   cursor: pointer;
   width: 161.45px;
   height: 44px;
+}
+
+.button__close {
+  border-radius: 25px;
+  border: 0;
+  background-color: #fea5bb;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.modal-content {
+  background-color: #fff5f6;
+  position: relative;
+  // height: 500px;
+  padding: 20px;
+  font-family: DM Sans;
+  color: #907e82;
+  font-size: 20px;
+}
+
+.form__fieldset {
+  border: 0;
 }
