@@ -69,7 +69,54 @@
   color: #907e82;
   font-size: 20px;
 }
-
+.form__header {
+  margin-top: 20px;
+}
 .form__fieldset {
   border: 0;
+  margin-block: 30px;
+  padding: 0;
+  &--textarea {
+    border: 0;
+    padding: 0;
+  }
+  &:focus-within {
+    border-color: #2196f3;
+  }
+  &--textrea:focus-within {
+    border-color: #2196f3;
+  }
+}
+
+.form__label {
+  padding-right: 9px;
+  &--name {
+    padding-right: 35px;
+  }
+  &--email {
+    padding-right: 27px;
+  }
+}
+
+.form__input {
+  border: 0;
+  border-radius: 25px;
+}
+.form__submit {
+  display: block;
+  margin: auto;
+
+  color: white;
+  background-color: #d41342;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 22px;
+  border: 0;
+  cursor: pointer;
+  width: 161.45px;
+  height: 44px;
 }
