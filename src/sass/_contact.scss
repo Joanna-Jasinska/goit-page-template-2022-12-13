@@ -314,3 +314,39 @@
     width: 180px;
   }
 }
+
+// mapa
+.background-map {
+  // display: none;
+  background-color: rgba(255, 192, 203, 0.651);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 999;
+  padding: 20px 20px 20px 20px;
+}
+.map {
+  background-color: #ffa5ba;
+  width: 100%;
+  height:100%;
+  position: relative;
+  
+}
+.modal__button {
+  z-index: 999;
+}
+.close {
+  position: absolute;
+  top:4px;
+  right:4px;
+  background-color: transparent;
+  border: 0;
+  font-size: 44px;
+  color: #d41342;
+  cursor: pointer;
+}
+.hidde {
+  display: none;
+}
