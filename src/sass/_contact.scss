@@ -108,7 +108,7 @@
     }
   }
   &__line {
-    border: 1px solid map-get($colors, 'white-primary');
+    border: 1px solid map-get($colors, 'black-secondary');
     margin-top: 25px;
     @media screen and (min-width: $tablet) {
       margin-top: 30px;
