@@ -23,12 +23,12 @@
   transform: translate(-50%, -50%);
   width: auto;
   // min-height: 581px;
-  background-color: #fff5f6;
+  background-color: map-get($colors, 'background-rose');
   z-index: 9999;
   border-radius: 5%;
 }
 .button__log {
-  background-color: #fff5f6;
+  background-color: map-get($colors, 'background-rose');
   display: flex;
   margin: auto;
 }
@@ -36,7 +36,7 @@
 .button__login {
   margin: auto;
 
-  color: white;
+  color: map-get($colors, 'white-primary');
   background-color: #d41342;
   font-family: DM Sans;
   font-size: 16px;
@@ -54,19 +54,19 @@
 .button__close {
   border-radius: 25px;
   border: 0;
-  background-color: #fea5bb;
-  color: white;
+  background-color: map-get($colors, 'pink-tertiary');
+  color:map-get($colors, 'white-primary');
   position: absolute;
   right: 5px;
   top: 5px;
 }
 .modal-content {
-  background-color: #fff5f6;
+  background-color: map-get($colors, 'background-rose');
   position: relative;
   // height: 500px;
   padding: 20px;
   font-family: DM Sans;
-  color: #907e82;
+  color: map-get($colors, 'black-secondary');
   font-size: 20px;
 }
 .form__header {
@@ -106,7 +106,7 @@
   display: block;
   margin: auto;
 
-  color: white;
+  color: map-get($colors, 'white-primary');
   background-color: #d41342;
   font-family: DM Sans;
   font-size: 16px;
