@@ -319,26 +319,5 @@
     margin-left: -6px;
   }
 
-  @media screen and (min-width: $tablet) {
-    .products {
-      &__icecream::before {
-        background-image: url('../images/products/tablet1@1x.png');
-        @media (min-device-pixel-ratio: 2) {
-          background-image: url('../images/products/tablet1@2x.png');
-        }
-      }
-      &__icecoffe::before {
-        background-image: url('../images/products/tablet2@1x.png');
-        @media (min-device-pixel-ratio: 2) {
-          background-image: url('../images/products/tablet2@2x.png');
-        }
-      }
-      &__milkshake::before {
-        background-image: url('../images/products/tablet3@1x.png');
-        @media (min-device-pixel-ratio: 2) {
-          background-image: url('../images/products/tablet3@2x.png');
-        }
-      }
-    }
-  }
+ 
 }
