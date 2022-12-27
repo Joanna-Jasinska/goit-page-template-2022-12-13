@@ -71,14 +71,16 @@
 }
 .form__header {
   margin-top: 20px;
+  text-align: center;
 }
 .form__fieldset {
   border: 0;
   margin-block: 30px;
   padding: 0;
   &--textarea {
-    border: 0;
+    position: relative;
     padding: 0;
+    border: 0;
   }
   &:focus-within {
     border-color: #2196f3;
@@ -90,11 +92,16 @@
 
 .form__label {
   padding-right: 9px;
+  // margin-bottom: 20px;
   &--name {
     padding-right: 35px;
   }
   &--email {
     padding-right: 27px;
+  }
+  &--comment {
+    position: absolute;
+    top: -10px;
   }
 }
 
@@ -104,8 +111,8 @@
 }
 .form__submit {
   display: block;
-  margin: auto;
-
+  margin-inline: auto;
+  margin-block: 20px;
   color: white;
   background-color: #d41342;
   font-family: DM Sans;
@@ -119,4 +126,11 @@
   cursor: pointer;
   width: 161.45px;
   height: 44px;
+}
+.form__textarea {
+  border: 0;
+  margin-block: 20px;
+}
+.legal-checkbox {
+  margin-block: 20px;
 }
