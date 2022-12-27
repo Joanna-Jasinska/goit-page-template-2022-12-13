@@ -6,14 +6,14 @@
   padding-block: 50px;
   padding-bottom: 97px;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: $tablet) and (max-width: 1200px) {
     padding-bottom: 140px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 139px;
   }
 
-  background-color: #fff5f6;
+  background-color: map-get($colors, 'background-rose');
   max-width: 100vw;
 
   &__header {
@@ -45,7 +45,7 @@
     line-height: 41px;
     letter-spacing: 0.04em;
     text-align: left;
-    color: #d41443;
+    color: map-get($colors, 'pink-primary');
   }
   &__text {
     font-family: 'DM Sans', sans-serif;
@@ -55,7 +55,7 @@
     letter-spacing: 0em;
     text-align: left;
 
-    color: #000000;
+    color: map-get($colors, 'black-primary');
   }
   &__container {
     max-width: 320px;
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet ) {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width:$desktop) {
   .advantages {
     max-width: 100vw;
   }

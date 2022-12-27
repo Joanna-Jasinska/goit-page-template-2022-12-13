@@ -3,7 +3,7 @@
 .backdrop {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: map-get($colors, 'black-primary');
   position: fixed;
   top: 0;
   left: 0;
@@ -54,11 +54,11 @@
     border: 1px solid;
     text-align: center;
     padding-top: 3%;
-    color: #ffa5ba;
+    color: map-get($colors, 'pink-secondary');
     letter-spacing: 0.1em;
 
     &-text {
-      color: #fff5f6;
+      color: map-get($colors, 'background-rose');
       width: 75%;
       margin: 0 auto;
       padding-top: 8%;
@@ -71,7 +71,7 @@
       justify-content: center;
       margin-top: 13%;
       font-size: 2.5vh;
-      color: #ffa5ba;
+      color: map-get($colors, 'pink-secondary');
     }
   }
 
@@ -127,7 +127,7 @@
 }
 
 .about {
-  background-color: #fff5f6;
+  background-color: map-get($colors, 'background-rose');
   width: 100%;
   background-image: url(../images/about/milk-mobile.png);
   background-repeat: no-repeat;
@@ -151,14 +151,14 @@
     &-label {
       font-size: 18px;
       line-height: 1.167;
-      color: #ffa5ba;
+      color: map-get($colors, 'pink-secondary');
     }
 
     &-title {
       font-size: 34px;
       line-height: 1.147;
       letter-spacing: 0.04em;
-      color: #d41443;
+      color:map-get($colors, 'pink-primary');
       padding-top: 15px;
     }
   }
@@ -185,7 +185,7 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 1.583;
-      color: #000000;
+      color: map-get($colors, 'black-primary');
       margin: 0 auto;
       padding-bottom: 47px;
     }
@@ -196,7 +196,7 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 1.583;
-      color: #907e82;
+      color: map-get($colors, 'black-secondary');
       margin: 0 auto;
       padding-bottom: 47px;
     }
@@ -205,7 +205,7 @@
       justify-content: center;
       width: 176px;
       height: 44px;
-      background: #ffffff;
+      background: map-get($colors, 'background-button-white');
       border-radius: 22px;
       border: none;
       margin: 0;
@@ -218,15 +218,15 @@
       line-height: 1.286;
       align-items: center;
       text-align: center;
-      color: #d41443;
+      color: map-get($colors, 'pink-primary');
 
       &:hover {
-        background: #ecebeb;
+        background: map-get($colors, 'background-button-white-hover');
       }
     }
 
     &-icon {
-      stroke: #d41443;
+      stroke: map-get($colors, 'pink-primary');
       width: 5.26px;
       height: 8px;
       margin-left: 15px;
@@ -235,7 +235,7 @@
 }
 // }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .about {
     min-width: 772px;
     background-image: none;
@@ -295,7 +295,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop) {
   .about {
     background-image: url(../images/about/milk-desktop.png);
     background-repeat: no-repeat;

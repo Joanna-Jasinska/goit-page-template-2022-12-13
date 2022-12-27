@@ -17,7 +17,7 @@
   letter-spacing: 0.04em;
   font-family: 'Titan One';
   color: map-get($colors, 'pink-secondary');
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 26px;
     width: 340px;
   }
@@ -33,7 +33,7 @@
   font-family: 'Titan One';
   color: map-get($colors, 'pink-primary');
   margin-top: 15px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 48px;
     width: 340px;
   }
@@ -50,7 +50,7 @@
   letter-spacing: 0.02em;
   color: map-get($colors, 'black-primary');
   margin: 0;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 14px;
   }
   @media screen and (max-width: 767px) {
@@ -64,7 +64,7 @@
   letter-spacing: 0.02em;
   color: map-get($colors, 'pink-primary');
   display: flex;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 14px;
   }
   @media screen and (max-width: 767px) {
@@ -80,7 +80,7 @@
   color: map-get($colors, 'black-secondary');
   display: flex;
   justify-content: center;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: 29px;
   }
   @media screen and (max-width: 767px) {
@@ -92,7 +92,7 @@
 
 .footer__watermark-border {
   border-top: 1px solid map-get($colors, 'border-white');
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     height: 73px;
   }
   @media screen and (max-width: 767px) {
@@ -103,7 +103,7 @@
 .footer__contacts-flex {
   display: flex;
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 100%;
   }
   @media screen and (max-width: 767px) {
@@ -117,7 +117,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 24px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     gap: 30px;
   }
   @media screen and (max-width: 767px) {
@@ -142,7 +142,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     justify-content: space-between;
     margin-bottom: 100px;
     margin-top: 20px;
