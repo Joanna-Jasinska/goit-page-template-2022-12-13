@@ -62,17 +62,10 @@
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 21px 43px 20px;
-  z-index: 900;
-
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count:infinite;
-  transition: all 0.2s;
-  transform: opacity, width, height;
+  z-index: 1;
   &:hover {
-    animation-name: slide;
- 
-  
+    transform: scaleX(1.5);
+    z-index: 2;
   }
  
   @media screen and (min-width: $tablet) {
@@ -376,22 +369,4 @@
 }
 .mapps {
   border-radius: 24px;
-}
-
-@keyframes slide {
-  0% {
-   transform: translateY(0);
-  }
- 25% {
-  transform: translateY(10px) ;
- }
- 50% {
-  transform: translateY(20px);
- }
- 75% {
-  transform: translateY(10px);
- }
-  100% {
-    transform: translateY(0);
-  }
 }
