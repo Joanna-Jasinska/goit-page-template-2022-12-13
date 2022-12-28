@@ -6,7 +6,7 @@
   position: absolute;
   background: none;
   border: none;
-  color: rgba(212, 20, 67, 1);
+  color: map-get($colors, 'pink-primary');
   right: 25px;
   top: 20px;
   &:hover {
@@ -29,7 +29,7 @@
 .header {
   height: 502px;
   width: 100%;
-  background-color: rgba(255, 184, 202, 1);
+  background-color: map-get($colors, 'background-pink');
 
   position: relative;
   min-width: 320px;
@@ -44,9 +44,9 @@
     text-align: center;
     padding: 7px 15px;
     border: none;
-    color: #fff;
+    color: map-get($colors, 'white-primary');
     z-index: 10;
-    background-color: rgba(212, 20, 67, 1);
+    background-color: map-get($colors, 'background-button-red');
     position: relative;
     font-weight: 400;
     font-family: 'DM Sans', sans-serif;
@@ -64,12 +64,12 @@
   }
 }
 .buttons-header__item.buttons-header__item--primary {
-  background-color: #fff;
-  color: rgba(212, 20, 67, 1);
+  background-color: map-get($colors, 'white-primary');
+  color: map-get($colors, 'pink-primary');
   margin-left: 1%;
   &:hover {
-    background-color: rgba(236, 235, 235, 1);
-    color: rgba(212, 20, 67, 1);
+    background-color: map-get($colors, 'background-button-white-hover');
+    color: map-get($colors, 'pink-primary');
   }
 }
 //img style
@@ -99,7 +99,7 @@
   &__text {
     font-weight: 400;
     font-size: 26px;
-    color: #fff;
+    color: map-get($colors, 'white-primary');
     text-transform: uppercase;
     margin: 0;
     font-family: 'Titan One', cursive;
@@ -107,7 +107,7 @@
     z-index: 10;
 
     &--primary {
-      color: rgba(212, 20, 67, 1);
+      color: map-get($colors, 'pink-primary');
       font-size: 48px;
     }
   }
@@ -132,7 +132,7 @@
 
   z-index: 999;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .mobile-menu {
     right: 240px;
   }
@@ -151,7 +151,7 @@
     cursor: pointer;
     transform: fill 250ms;
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-    fill: rgba(212, 20, 67, 1);
+    fill: map-get($colors, 'pink-primary');
   }
 }
 
@@ -185,12 +185,12 @@
   transition: color 250ms;
   &:hover {
     cursor: pointer;
-    color: rgba(212, 20, 67, 1);
+    color: map-get($colors, 'pink-primary');
     transform: color 250ms;
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   &--white:hover {
-    color: #fff;
+    color: map-get($colors, 'white-primary');
   }
 }
 //mobile-menu button BUY
@@ -200,16 +200,16 @@
   width: 160px;
   height: 44px;
   margin-top: 45px;
-  background-color: #fff;
+  background-color: map-get($colors, 'white-primary');
   border-radius: 22px;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
-  color: rgba(212, 20, 67, 1);
+  color: map-get($colors, 'pink-primary');
   border: none;
   transition: background-color 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background-color: rgba(236, 235, 235, 1);
+    background-color: map-get($colors, 'background-button-white-hover');
 
     cursor: pointer;
     transform: background-color 250ms;
@@ -236,13 +236,13 @@
 }
 
 .icon-arrow-btn {
-  stroke: #d41443;
+  stroke: map-get($colors, 'pink-primary');
   width: 5.26px;
   height: 8px;
   margin-left: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .header__elipsebackgroundmobile {
     display: none;
   }
@@ -253,8 +253,8 @@
   }
 
   .icon-arrow-btn {
-    @media screen and (min-width: 768px) {
-      stroke: #d41443;
+    @media screen and (min-width: $tablet) {
+      stroke: map-get($colors, 'pink-primary');
       width: 4px;
       height: 8px;
       margin-left: 12px;
@@ -312,7 +312,7 @@
   .text-arrow__lorem {
     font-family: 'DM Sans', sans-serif;
     font-size: 8px;
-    color: #fff;
+    color: map-get($colors, 'white-primary');
   }
   .milk-text-arrow {
     display: flex;
@@ -354,14 +354,14 @@
     font-size: 28px;
     font-weight: 400;
     font-family: 'Titan One', cursive;
-    color: rgba(212, 20, 67, 1);
+    color: map-get($colors, 'pink-primary');
     position: relative;
     z-index: 1;
     &--primary {
       font-family: 'DM Sans', sans-serif;
       font-size: 8px;
       font-weight: 400;
-      color: #fff;
+      color: map-get($colors, 'white-primary');
       margin-top: 1px;
     }
   }
@@ -390,17 +390,17 @@
     text-align: center;
     width: 160px;
     height: 44px;
-    background-color: #fff;
+    background-color: map-get($colors, 'white-primary');
     border-radius: 22px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
-    color: rgba(212, 20, 67, 1);
+    color: map-get($colors, 'pink-primary');
     border: none;
     transition: background-color 400ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 20px;
     &:hover {
-      background-color: rgba(236, 235, 235, 1);
+      background-color: map-get($colors, 'background-button-white-hover');
 
       cursor: pointer;
       transform: background-color 250ms;
@@ -409,7 +409,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .mobile-menu__open-btn {
     display: none;
   }
@@ -539,7 +539,7 @@
 
     &-element {
       margin: 0 15px;
-      color: #fff;
+      color: map-get($colors, 'white-primary');
       font-family: 'DM Sans', sans-serif;
       font-weight: 700;
       font-size: 16px;
@@ -551,7 +551,7 @@
     display: none;
   }
 }
-@media screen and(min-width:1200px) {
+@media screen and(min-width:$desktop) {
   .mobile-menu {
     display: none;
   }
