@@ -341,12 +341,25 @@
   padding: 20px 20px 20px 20px;
 }
 .map {
-  background-color: #ffa5ba;
+  background-color: #fcfafa;
   width: 90%;
   height:100%;
   position: relative;
+  border: 1px solid map-get($colors , 'pink-primary' );
   border-radius: 24px;
-  
+  padding: 50px;
+  &--flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &__branch {
+    width: 50%;
+  }
+  &__road {
+    border-radius: 24px;
+    margin-top: 20px;
+  }
 }
 .modal__button {
   z-index: 999;
@@ -369,6 +382,4 @@
 .hidde {
   display: none;
 }
-.mapps {
-  border-radius: 24px;
-}
+
