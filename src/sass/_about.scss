@@ -1,113 +1,241 @@
-@media screen and (min-width: 320px) {
-  .about {
-    background-color: #fff5f6;
-    width: 100%;
-    background-image: url(../images/about/milk-mobile.png);
-    background-repeat: no-repeat;
-    background-position: 0 776px;
-    background-size: 100vw 133px;
-    padding-bottom: 39px;
+// @media screen and (min-width: 320px) {
 
-    &__header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      font-family: 'Titan One';
-      font-style: normal;
-      font-weight: 400;
-      text-align: center;
-      text-transform: uppercase;
-      padding-top: 125px;
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: map-get($colors, 'black-primary');
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+  z-index: 10;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  width: 75vw;
+  height: 75vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //   0px 2px 1px rgba(0, 0, 0, 0.2);
+  // border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    width: 10px;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    cursor: pointer;
+  }
+
+  &__box {
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    background-color: #d41444;
+    border-radius: 6px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3%;
+    color: map-get($colors, 'pink-secondary');
+    letter-spacing: 0.1em;
+
+    &-text {
+      color: map-get($colors, 'background-rose');
+      width: 75%;
       margin: 0 auto;
-      width: 200px;
+      padding-top: 8%;
+      font-family: 'Dm Sans';
+      font-size: 2vh;
+    }
 
-      &-label {
-        font-size: 18px;
-        line-height: 1.167;
-        color: #ffa5ba;
-      }
-
-      &-title {
-        font-size: 34px;
-        line-height: 1.147;
-        letter-spacing: 0.04em;
-        color: #d41443;
-        padding-top: 15px;
-      }
+    &-number {
+      display: flex;
+      justify-content: center;
+      margin-top: 13%;
+      font-size: 2.5vh;
+      color: map-get($colors, 'pink-secondary');
     }
   }
 
-  .informations {
-    display: flex;
-    flex-wrap: wrap;
-    width: 220px;
-    margin: 0 auto;
-    padding-top: 26px;
+  .animation-1 {
+    animation: one 3s ease-out;
+  }
+  .animation-2 {
+    animation: two 3s ease-out;
+  }
+  .animation-3 {
+    animation: three 3s ease-out;
+  }
+  .animation-4 {
+    animation: four 3s ease-out;
+  }
 
-    &__picture {
-      margin-left: -30px;
-      padding-bottom: 46px;
+  @keyframes one {
+    0% {
+      transform: translateY(-250%);
     }
 
-    &__text {
-      &-black {
-        display: flex;
-        justify-content: center;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.583;
-        color: #000000;
-        margin: 0 auto;
-        padding-bottom: 47px;
-      }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes two {
+    0% {
+      transform: translateX(250%);
+    }
 
-      &-grey {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.583;
-        color: #907e82;
-        margin: 0 auto;
-        padding-bottom: 47px;
-      }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes three {
+    0% {
+      transform: translateX(-250%);
+    }
 
-      &-button {
-        justify-content: center;
-        width: 176px;
-        height: 44px;
-        background: #ffffff;
-        border-radius: 22px;
-        border: none;
-        margin: 0;
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes four {
+    0% {
+      transform: translateY(250%);
+    }
 
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.286;
-        align-items: center;
-        text-align: center;
-        color: #d41443;
-
-        &:hover {
-          background: #ecebeb;
-        }
-      }
-
-      &-icon {
-        stroke: #d41443;
-        width: 5.26px;
-        height: 8px;
-        margin-left: 15px;
-      }
+    100% {
+      transform: translateY(0);
     }
   }
 }
 
-@media screen and (min-width: 768px) {
+.about {
+  background-color: map-get($colors, 'background-rose');
+  width: 100%;
+  background-image: url(../images/about/milk-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 0 776px;
+  background-size: 100vw 133px;
+  padding-bottom: 39px;
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 125px;
+    margin: 0 auto;
+    width: 200px;
+
+    &-label {
+      font-size: 18px;
+      line-height: 1.167;
+      color: map-get($colors, 'pink-secondary');
+    }
+
+    &-title {
+      font-size: 34px;
+      line-height: 1.147;
+      letter-spacing: 0.04em;
+      color:map-get($colors, 'pink-primary');
+      padding-top: 15px;
+    }
+  }
+}
+
+.informations {
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 26px;
+
+  &__picture {
+    margin-left: -30px;
+    padding-bottom: 46px;
+  }
+
+  &__text {
+    &-black {
+      display: flex;
+      justify-content: center;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.583;
+      color: map-get($colors, 'black-primary');
+      margin: 0 auto;
+      padding-bottom: 47px;
+    }
+
+    &-grey {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.583;
+      color: map-get($colors, 'black-secondary');
+      margin: 0 auto;
+      padding-bottom: 47px;
+    }
+
+    &-button {
+      justify-content: center;
+      width: 176px;
+      height: 44px;
+      background: map-get($colors, 'background-button-white');
+      border-radius: 22px;
+      border: none;
+      margin: 0;
+      cursor: pointer;
+
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.286;
+      align-items: center;
+      text-align: center;
+      color: map-get($colors, 'pink-primary');
+
+      &:hover {
+        background: map-get($colors, 'background-button-white-hover');
+      }
+    }
+
+    &-icon {
+      stroke: map-get($colors, 'pink-primary');
+      width: 5.26px;
+      height: 8px;
+      margin-left: 15px;
+    }
+  }
+}
+// }
+
+@media screen and (min-width: $tablet) {
   .about {
     min-width: 772px;
     background-image: none;
@@ -167,7 +295,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop) {
   .about {
     background-image: url(../images/about/milk-desktop.png);
     background-repeat: no-repeat;

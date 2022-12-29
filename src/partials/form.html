@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="button__log">
+    <button class="button__login" type="button" data-form-open>Log in</button>
+  </div>
+  <div class="backdrop hidden" data-form>
+    <div class="modal">
+      <div class="modal-content">
+        <button type="button" class="button__close" data-form-close>X</button>
+        <form class="form" name="PersonalData" autocomplete="on" novalidate>
+          <h3 class="form__header">Zaloguj się tutaj</h3>
+
+          <fieldset class="form__fieldset">
+            <label for="name" class="form__label--name">Imię</label>
+            <input name="name" class="form__input" type="text" id="name" />
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <label for="phone" class="form__label">Telefon</label>
+
+            <input
+              name="phone-number"
+              class="form__input"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              id="phone"
+            />
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <label for="email" class="form__label--email">Email</label>
+            <input name="email-contact__address" class="form__input" type="email" id="email" />
+          </fieldset>
+
+          <fieldset class="form__fieldset--textarea">
+            <label class="form__label form__label--comment">Komentarz</label>
+            <textarea
+              name="comment"
+              rows="5"
+              cols="30"
+              class="form__textarea"
+              placeholder="Daj znać, co o nas sądzisz :)"
+            ></textarea>
+          </fieldset>
+          <label class="legal-checkbox">
+            <input class="legal-checkbox__input" type="checkbox" id="legal" />
+            <span class="checkmark"></span>
+            Oświadczam iż akceptuję <span class="legal-checkbox__conditions">Regulamin</span> i
+            <span class="legal-checkbox__conditions">Politykę Prywatności</span>.
+          </label>
+          <input type="submit" value="Wyślij" class="form__submit" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./modal-form.js"></script>

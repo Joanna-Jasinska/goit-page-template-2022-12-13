@@ -9,11 +9,11 @@
 
 .review {
     padding-bottom: 86.16px;
-     @media screen and (min-width: 768px) {
+     @media screen and (min-width: $tablet) {
         padding-bottom: 119.16px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         padding-bottom: 132px;
     }
     &__picture {
@@ -31,11 +31,11 @@
     padding-block: 25px;
     padding-bottom: 15px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         padding-inline: 80px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         max-width: 926px;
     }
 }
@@ -62,11 +62,11 @@
     padding-inline: 20px;
     font-family: "DM Sans", sans-serif;
    
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         font-size: 14px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 16px;
         letter-spacing: 0.04em;
     }
@@ -98,13 +98,13 @@
     font-weight: 500;
     font-family: "DM Sans", sans-serif;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         font-size: 16px;
         margin-top: 15px;
         margin-bottom: 35px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 20px;
     }
 }
@@ -141,7 +141,7 @@
     &_details {
     margin-top: 30px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         margin-top: 15px;
     }
 }

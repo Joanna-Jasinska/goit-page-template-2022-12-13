@@ -32,7 +32,7 @@
         in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
         maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
       </p>
-      <button class="informations__text-button">
+      <button class="informations__text-button" type="button" data-modal-open>
         Read more
         <svg class="informations__text-icon">
           <use class="" href="./images/sprites.svg#icon-arrow-btn"></use>
@@ -41,3 +41,45 @@
     </div>
   </div>
 </section>
+
+<section class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__button" type="button" data-modal-close>
+      <img src="/images/about/modal-close.png" alt="close button"/>
+    </button>
+    <div class="modal__box animation-1">
+      MILK
+      <p class="modal__box-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a class="modal__box-number">---1---</a>
+    </div>
+    <div class="modal__box animation-2">
+      CHOCOLATE
+      <p class="modal__box-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a class="modal__box-number">---2---</a>
+    </div>
+    <div class="modal__box animation-3">
+      TRADITION
+      <p class="modal__box-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a class="modal__box-number">---3---</a>
+    </div>
+    <div class="modal__box animation-4">
+      LOVE
+      <p class="modal__box-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a class="modal__box-number">---4---</a>
+    </div>
+  </div>
+</section>
+
+<script src="./read-more.js"></script>
