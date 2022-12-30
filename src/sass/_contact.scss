@@ -371,12 +371,12 @@
   background-color: transparent;
   border: 0;
   font-size: 24px;
-  color: map-get($colors, 'background-button-red');
+  color: map-get($colors, 'pink-secondary');
 
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
   &:hover {
-    color:map-get($colors, 'white-primary');
+    color:map-get($colors, 'pink-primary');
   }
 }
 .hidde {
