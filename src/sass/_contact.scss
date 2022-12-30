@@ -341,12 +341,25 @@
   padding: 20px 20px 20px 20px;
 }
 .map {
-  background-color: #ffa5ba;
+  background-color: #fcfafa;
   width: 90%;
   height:100%;
   position: relative;
+  border: 1px solid map-get($colors , 'pink-primary' );
   border-radius: 24px;
-  
+  padding: 50px;
+  &--flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &__branch {
+    width: 50%;
+  }
+  &__road {
+    border-radius: 24px;
+    margin-top: 20px;
+  }
 }
 .modal__button {
   z-index: 999;
@@ -358,17 +371,15 @@
   background-color: transparent;
   border: 0;
   font-size: 24px;
-  color: map-get($colors, 'background-button-red');
+  color: map-get($colors, 'pink-secondary');
 
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
   &:hover {
-    color:map-get($colors, 'white-primary');
+    color:map-get($colors, 'pink-primary');
   }
 }
 .hidde {
   display: none;
 }
-.mapps {
-  border-radius: 24px;
-}
+
